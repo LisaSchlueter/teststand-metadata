@@ -1,0 +1,42 @@
+{
+    "name": "LBNL_PPC01",
+    "channel": 1,
+    "type": "PPC",
+    "production": {
+        "manufacturer": NaN,
+        "order": NaN,
+        "crystal": NaN,
+        "slice": NaN,
+        "enrichment": {
+          "val": NaN,
+          "unc": NaN
+        },
+        "passivation": NaN,
+        "mass_in_g": NaN
+      },
+      "geometry": {
+        "height_in_mm": NaN,
+        "radius_in_mm": NaN,
+        "groove": {
+          "depth_in_mm": NaN,
+          "radius_in_mm": {
+            "outer": NaN,
+            "inner": NaN
+          }
+        },
+        "pp_contact": {
+          "radius_in_mm": NaN,
+          "depth_in_mm": NaN
+        },
+        "taper": {
+          "top": {
+            "angle_in_deg": NaN,
+            "height_in_mm": NaN
+          },
+          "bottom": {
+            "angle_in_deg": NaN,
+            "height_in_mm": NaN
+          }
+        }
+      }
+    }

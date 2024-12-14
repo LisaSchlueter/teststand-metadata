@@ -66,11 +66,11 @@
         "e_grid_trap" : {
             "rt": {
                 "start": {
-                    "val": 0.5,
+                    "val": 1.5,
                     "unit": "µs"
                 },
                 "stop": {
-                    "val": 12.0,
+                    "val": 6.0,
                     "unit": "µs"
                 },
                 "step": {
@@ -100,7 +100,7 @@
                     "unit": "µs"
                 },
                 "stop": {
-                    "val": 13.0,
+                    "val": 6.0,
                     "unit": "µs"
                 },
                 "step": {
@@ -130,7 +130,7 @@
                     "unit": "µs"
                 },
                 "stop": {
-                    "val": 13.0,
+                    "val": 6.0,
                     "unit": "µs"
                 },
                 "step": {
@@ -176,11 +176,11 @@
             "trap":
                 {
                     "rt": {
-                        "val": 2.08,
+                        "val": 2.5,
                         "unit": "µs"
                     },
                     "ft": {
-                        "val": 3.0,
+                        "val": 2.5,
                         "unit": "µs"
                     }
                 },

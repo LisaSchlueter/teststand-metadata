@@ -1,0 +1,103 @@
+{
+    "default": {
+        "source": "co60",
+        "co60_lines": {
+            "val": [1173.237, 1332.501],
+            "unit": "keV"
+        },
+        "co60_names":  ["Co60a", "Co60b"],
+        "co60_left_window_sizes":   {
+            "val": [25.0,      25.0],
+            "unit": "keV"
+        },
+        "co60_right_window_sizes":  {
+            "val": [25.0,      25.0],
+            "unit": "keV"
+        },
+        "co60_fit_func": ["gamma_def", "gamma_def"],
+        "th228_lines":  {
+            "val": [583.191,  727.330,  860.564,  1592.53,    1620.50,    2103.53,    2614.51],
+            "unit": "keV"
+        },
+        "th228_names":  ["Tl208a", "Bi212a", "Tl208b", "Tl208DEP", "Bi212FEP", "Tl208SEP", "Tl208FEP"],
+        "th228_left_window_sizes":   {
+            "val": [25,      25,      25,      25,      15,      25,      35],
+            "unit": "keV"
+        },
+        "th228_right_window_sizes":  {
+            "val": [25,      25,      25,      15,      25,      25,      30],
+            "unit": "keV"
+        },
+        "th228_fit_func": ["gamma_def", "gamma_def", "gamma_def", "gamma_tails_bckFlat", "gamma_def", "gamma_tails_bckFlat", "gamma_def"],
+        "n_bins": 15000,
+        "quantile_perc": "NaN",
+        "binning_peak_window": {
+            "val": 4,
+            "unit": "keV"
+        },
+        "peakfinder_σ": 2.0, 
+        "peakfinder_threshold" : 10.0, 
+        "left_peak_quantile":0.4, 
+        "right_peak_quantile":1.0, 
+        "left_bin_quantile":0.4,
+        "right_bin_quantile":0.85,
+        "qc":{
+            "fit": "n > 10 && σ > 5 && getproperty(gof, :converged) && abs(get(gof, :median_residuals, 0)) < 25 && stdscore(μ, 0.0) > 5 && stdscore(centroid, 0.0) > 5 && stdscore(σ, 0.0) > 1 && stdscore(fwhm, 0.0) > 1",
+            "min_fwhm": {
+                "val": 1.0,
+                "unit": "keV"
+            },
+            "max_fwhm_per_window": 0.5
+        },
+        "cal_pol_order": 1,
+        "cal_fit_excluded_peaks": ["Tl208DEP", "Tl208SEP"],
+        "cal_fit_max_tolerance": {
+            "val": 1.5,
+            "unit": "keV"
+        },
+        "fwhm_pol_order": 1,
+        "fwhm_fit_excluded_peaks": ["Tl208DEP", "Tl208SEP"],
+        "fwhm_fit_min_fwhm": {
+            "val": 1.0,
+            "unit": "keV"
+        },
+        "energy_types": ["e_trap", "e_cusp", "e_trap_ctc", "e_cusp_ctc", "e_10410", "e_313", "e_535"]
+    },
+    "p_default":   {
+        "th228_lines":  {
+            "val": [583.191,  727.330,  860.564,  1592.53,    1620.50,    2103.53,    2614.51],
+            "unit": "keV"
+        },
+        "th228_names":  ["Tl208a", "Bi212a", "Tl208b", "Tl208DEP", "Bi212FEP", "Tl208SEP", "Tl208FEP"],
+        "left_window_sizes":   {
+            "val": [25,      25,      25,      25,      25,      25,      35],
+            "unit": "keV"
+        },
+        "right_window_sizes":  {
+            "val": [25,      25,      25,      15,      25,      25,      30],
+            "unit": "keV"
+        },
+        "th228_fit_func": ["gamma_def", "gamma_def", "gamma_def", "gamma_tails_bckFlat", "gamma_def", "gamma_tails_bckFlat", "gamma_def"],
+        "qc":{
+            "fit": "n > 10 && σ > 5 && getproperty(gof, :converged) && abs(get(gof, :median_residuals, 0)) < 25 && stdscore(μ, 0.0) > 5 && stdscore(centroid, 0.0) > 5 && stdscore(σ, 0.0) > 1 && stdscore(fwhm, 0.0) > 1",
+            "min_fwhm": {
+                "val": 1.0,
+                "unit": "keV"
+            },
+            "max_fwhm_per_window": 0.5
+        },
+        "cal_pol_order": 2,
+        "cal_fit_excluded_peaks": ["Tl208DEP", "Tl208SEP"],
+        "cal_fit_max_tolerance": {
+            "val": 1.0,
+            "unit": "keV"
+        },
+        "fwhm_pol_order": 2,
+        "fwhm_fit_excluded_peaks": ["Tl208DEP", "Tl208SEP"],
+        "fwhm_fit_min_fwhm": {
+            "val": 1.0,
+            "unit": "keV"
+        },
+        "energy_types": ["e_trap_ctc", "e_cusp_ctc"]
+    }
+}

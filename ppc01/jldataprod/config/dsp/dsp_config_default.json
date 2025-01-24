@@ -1,15 +1,15 @@
 {   
     "default": {
         "enc_pickoff_trap": {
-            "val": 50.0,
+            "val": 18.0,
             "unit": "µs"
         },
         "enc_pickoff_zac": {
-            "val": 50.0,
+            "val": 18.0,
             "unit": "µs"
         }, 
         "enc_pickoff_cusp": {
-            "val": 50.0,
+            "val": 18.0,
             "unit": "µs"
         }, 
         "flt_length_cusp": {
@@ -26,17 +26,17 @@
                 "unit": "µs"
             }, 
             "max": {
-                "val": 120.0,
+                "val": 20.0,
                 "unit": "µs"
             }
         },
         "tail_window": {
             "min": {
-                "val": 160.0,
+                "val": 30.0,
                 "unit": "µs"
             }, 
             "max": {
-                "val": 550.0,
+                "val": 130.0,
                 "unit": "µs"
             }
         },

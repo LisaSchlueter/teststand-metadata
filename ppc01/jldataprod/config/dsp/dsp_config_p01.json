@@ -1,0 +1,80 @@
+{   
+    "default": {
+    "enc_pickoff_trap": {
+            "val": 50.0,
+            "unit": "µs"},
+        "enc_pickoff_zac": {
+            "val": 50.0,
+            "unit": "µs"},
+        "enc_pickoff_cusp": {
+                "val": 50.0,
+                "unit": "µs"},
+        "flt_length_cusp": {
+            "val": 30.0,
+            "unit": "µs"
+        }, 
+        "flt_length_zac": {
+            "val": 30.0,
+            "unit": "µs"
+        }, 
+        "bl_window": {
+            "min": {
+                "val": 0.0,
+                "unit": "µs"
+            }, 
+            "max": {
+                "val": 120.0,
+                "unit": "µs"
+            }
+        },
+        "tail_window": {
+            "min": {
+                "val": 160.0,
+                "unit": "µs"
+            }, 
+            "max": {
+                "val": 550.0,
+                "unit": "µs"
+            }
+        },
+        "current_window": {
+            "min": {
+                "val": 18.0,
+                "unit": "µs"
+            }, 
+            "max": {
+                "val": 300.0,
+                "unit": "µs"
+            }
+        }, 
+        "t0_threshold": 0.01, 
+        "flt_defaults": {
+            "sg":
+                {
+                    "val": 100.0,
+                    "unit": "ns"
+                },
+            "trap":
+                {
+                    "rt": {
+                        "val": 2.5,
+                        "unit": "µs"
+                    },
+                    "ft": {
+                        "val": 2.5,
+                        "unit": "µs"
+                    }
+                },
+            "cusp": {
+                "rt": {
+                    "val": 1.0,
+                    "unit": "µs"
+                },
+                "ft": {
+                    "val": 3.0,
+                    "unit": "µs"
+                }
+            }
+        }
+    }
+}

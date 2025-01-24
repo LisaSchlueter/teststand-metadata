@@ -1,0 +1,99 @@
+{   
+    "default": {
+        "enc_pickoff_trap": {
+            "val": 18.0,
+            "unit": "µs"
+        },
+        "bl_window": {
+            "min": {
+                "val": 0.0,
+                "unit": "µs"
+            }, 
+            "max": {
+                "val": 20.0,
+                "unit": "µs"
+            }
+        },
+        "tail_window": {
+            "min": {
+                "val": 30.0,
+                "unit": "µs"
+            }, 
+            "max": {
+                "val": 130.0,
+                "unit": "µs"
+            }
+        },
+        "current_window": {
+            "min": {
+                "val": 18.0,
+                "unit": "µs"
+            }, 
+            "max": {
+                "val": 300.0,
+                "unit": "µs"
+            }
+        },
+        "qdrift_int_length": {
+            "val": [2.5, 5.0],
+            "unit": "µs"
+        },
+        "lq_int_length": {
+            "val": [2.5, 5.0],
+            "unit": "µs"
+        },        
+        "t0_threshold": 0.01, 
+        "flt_defaults": {
+            "sg":
+                {
+                    "val": 100.0,
+                    "unit": "ns"
+                },
+            "trap":
+                {
+                    "rt": {
+                        "val": 2.5,
+                        "unit": "µs"
+                    },
+                    "ft": {
+                        "val": 2.5,
+                        "unit": "µs"
+                    }
+                },
+            "zac": {
+                "rt": {
+                    "val": 5.0,
+                    "unit": "µs"
+                },
+                "ft": {
+                    "val": 2.5,
+                    "unit": "µs"
+                }
+            },
+            "cusp": {
+                "rt": {
+                    "val": 1.0,
+                    "unit": "µs"
+                },
+                "ft": {
+                    "val": 3.0,
+                    "unit": "µs"
+                }
+            } 
+        }},
+        "pz": {
+            "default": {
+                "min_tau": {
+                    "val" : 0.0,
+                    "unit" : "µs"
+                },
+                "max_tau": {
+                    "val": 650.0,
+                    "unit": "µs"
+                },
+                "nbins": 75,
+                "rel_cut_fit": 0.05,
+                "peak": "Co60a"
+            }
+        }
+}

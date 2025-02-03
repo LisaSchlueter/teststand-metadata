@@ -14,7 +14,7 @@
             "absmax": 1.0e-5
         },
         "tailslope": {
-            "absmax": 1.0e-5
+            "absmax": 2.0e-5
         }
     }
 }

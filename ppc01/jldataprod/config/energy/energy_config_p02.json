@@ -2,32 +2,32 @@
     "default": {
         "source": "co60",
         "co60_lines": {
-            "val": [1173.237, 1332.501],
+            "val": [1173.237],
             "unit": "keV"
         },
-        "co60_names":  ["Co60a", "Co60b"],
+        "co60_names":  ["Co60a"],
         "co60_left_window_sizes":   {
-            "val": [25.0,      25.0],
+            "val": [100.0],
             "unit": "keV"
         },
         "co60_right_window_sizes":  {
-            "val": [25.0,      25.0],
+            "val": [100.0],
             "unit": "keV"
         },
-        "co60_fit_func": ["gamma_def", "gamma_def"],
+        "co60_fit_func": ["gamma_def"],
         "n_bins": 15000,
         "quantile_perc": "NaN",
         "binning_peak_window": {
             "val": 4,
             "unit": "keV"
         },
-        "peakfinder_σ": 3.0, 
-        "peakfinder_threshold" : 20.0, 
-        "left_peak_quantile":0.4, 
+        "peakfinder_σ": 5.0, 
+        "peakfinder_threshold" : 30.0, 
+        "left_peak_quantile":0.0, 
         "right_peak_quantile":1.0, 
-        "left_bin_quantile":0.4,
-        "right_bin_quantile":0.85,
-        "nbins_min": 50,
+        "left_bin_quantile":0.0,
+        "right_bin_quantile":0.6,
+        "nbins_min": 20,
         "cal_pol_order": 1,
         "cal_fit_excluded_peaks": ["Tl208DEP", "Tl208SEP"],
         "cal_fit_max_tolerance": {

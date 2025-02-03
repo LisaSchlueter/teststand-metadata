@@ -1,0 +1,144 @@
+{   
+    "default": {
+        "enc_pickoff_trap": {
+            "val": 18.0,
+            "unit": "µs"
+        },
+        "bl_window": {
+            "min": {
+                "val": 0.0,
+                "unit": "µs"
+            }, 
+            "max": {
+                "val": 37.0,
+                "unit": "µs"
+            }
+        },
+        "tail_window": {
+            "min": {
+                "val": 45.0,
+                "unit": "µs"
+            }, 
+            "max": {
+                "val": 199.0,
+                "unit": "µs"
+            }
+        },
+        "current_window": {
+            "min": {
+                "val": 37.0,
+                "unit": "µs"
+            }, 
+            "max": {
+                "val": 199.0,
+                "unit": "µs"
+            }
+        },
+        "qdrift_int_length": {
+            "val": [2.5, 5.0],
+            "unit": "µs"
+        },
+        "lq_int_length": {
+            "val": [2.5, 5.0],
+            "unit": "µs"
+        },        
+        "t0_threshold": 0.01, 
+        "flt_defaults": {
+            "sg":
+                {
+                    "val": 100.0,
+                    "unit": "ns"
+                },
+            "trap":
+                {
+                    "rt": {
+                        "val": 2.5,
+                        "unit": "µs"
+                    },
+                    "ft": {
+                        "val": 2.5,
+                        "unit": "µs"
+                    }
+                },
+            "zac": {
+                "rt": {
+                    "val": 5.0,
+                    "unit": "µs"
+                },
+                "ft": {
+                    "val": 2.5,
+                    "unit": "µs"
+                }
+            },
+            "cusp": {
+                "rt": {
+                    "val": 1.0,
+                    "unit": "µs"
+                },
+                "ft": {
+                    "val": 3.0,
+                    "unit": "µs"
+                }
+            } 
+        }},
+        "optimization": {
+            "default": {
+                "trap": {
+                    "min_enc": -20.0,
+                    "max_enc": 20.0,
+                    "nbins_enc_sigmas": 6000,
+                    "rel_cut_fit_enc_sigmas": 0.1,
+                    "ft_fixed": {
+                        "val": 1.5,
+                        "unit": "µs"
+                    },
+                    "min_e_fep": 2000.0,
+                    "max_e_fep": 8000.0,
+                    "nbins_e_fep": 1000,
+                    "rel_cut_fit_e_fep": 0.5
+                },
+                "cusp": {
+                    "min_enc": -400.0,
+                    "max_enc": 400.0,
+                    "nbins_enc_sigmas": 1000,
+                    "rel_cut_fit_enc_sigmas": 0.1,
+                    "ft_fixed": {
+                        "val": 1.5,
+                        "unit": "µs"
+                    },
+                    "min_e_fep": 80000.0,
+                    "max_e_fep": 480000.0,
+                    "nbins_e_fep": 1000,
+                    "rel_cut_fit_e_fep": 0.5
+                },
+                "zac": {
+                    "min_enc": -400.0,
+                    "max_enc": 400.0,
+                    "nbins_enc_sigmas": 1000,
+                    "rel_cut_fit_enc_sigmas": 0.1,
+                    "ft_fixed": {
+                        "val": 1.5,
+                        "unit": "µs"
+                    },
+                    "min_e_fep": 80000.0,
+                    "max_e_fep": 480000.0,
+                    "nbins_e_fep": 1000,
+                    "rel_cut_fit_e_fep": 0.5
+                }
+            }},
+        "pz": {
+            "default": {
+                "min_tau": {
+                    "val" : 0.0,
+                    "unit" : "µs"
+                },
+                "max_tau": {
+                    "val": 900.0,
+                    "unit": "µs"
+                },
+                "nbins": 75,
+                "rel_cut_fit": 0.05,
+                "peak": "Co60a"
+            }
+        }
+}

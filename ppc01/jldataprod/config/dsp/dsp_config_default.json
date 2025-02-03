@@ -180,7 +180,7 @@
                         "unit": "µs"
                     },
                     "ft": {
-                        "val": 2.5,
+                        "val": 1.0,
                         "unit": "µs"
                     }
                 },
@@ -250,7 +250,7 @@
                 "min_e_fep": 2000.0,
                 "max_e_fep": 8000.0,
                 "nbins_e_fep": 1000,
-                "rel_cut_fit_e_fep": 0.5
+                "rel_cut_fit_e_fep": 0.1
             },
             "cusp": {
                 "min_enc": -400.0,
@@ -264,7 +264,7 @@
                 "min_e_fep": 80000.0,
                 "max_e_fep": 480000.0,
                 "nbins_e_fep": 1000,
-                "rel_cut_fit_e_fep": 0.5
+                "rel_cut_fit_e_fep": 0.1
             },
             "zac": {
                 "min_enc": -400.0,
@@ -278,7 +278,7 @@
                 "min_e_fep": 80000.0,
                 "max_e_fep": 480000.0,
                 "nbins_e_fep": 1000,
-                "rel_cut_fit_e_fep": 0.5
+                "rel_cut_fit_e_fep": 0.1
             },
             "sg": {
                 "dep_sep_quantile": 0.5,

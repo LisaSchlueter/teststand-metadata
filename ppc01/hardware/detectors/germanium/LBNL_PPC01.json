@@ -3,7 +3,7 @@
     "channel": 1,
     "type": "PPC",
     "production": {
-        "manufacturer": NaN,
+        "manufacturer": LBNL,
         "order": NaN,
         "crystal": NaN,
         "slice": NaN,
@@ -15,8 +15,8 @@
         "mass_in_g": NaN
       },
       "geometry": {
-        "height_in_mm": NaN,
-        "radius_in_mm": NaN,
+        "height_in_mm": 60,
+        "radius_in_mm": 30,
         "groove": {
           "depth_in_mm": NaN,
           "radius_in_mm": {

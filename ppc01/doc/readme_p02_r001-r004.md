@@ -30,11 +30,24 @@ Cooled via cold finger in liquid nitrogen dewar to `~90.2 K`.
 |:----------------| :----------------|
 | Type | PPC | 
 | Name | `DetectorId(:LBNL_PP01)` / `ChannelId(1)` | 
-| Operation voltage |  2.44 kV (fully depleted) | 
+| Operation voltage |  `2.44 kV - 2.45 kV` (fully depleted) | 
 | | |
+
+## Radioactive source
+Co-60. Placed on top of vacuum cryostat with some styrofoam plates as distance keepers. 
 
 ## Electronics
 LBNL graphene GFET amplifier. 
+| | |
+|:----------------| :----------------|
+|||
++VCC | `+5.09 V` |
+|-VCC | `-5.09 V` |
+|GFET | `+1.00 V`|
+|Ref run 1 `r001`, and run 2 `r002` | `810 mV` |
+|Ref run 3 `r003` | `795 mV` | 
+|Ref run 4 `r003` | `800 mV` | 
+
 
 ## DAQ
 
@@ -49,4 +62,4 @@ LBNL graphene GFET amplifier.
 | Coupling mode | `AC coupled` | 
 | | |
 ## Remarks and comments
-Period 3 and 4 are longer and have different `t0`. 
+Period 3 and 4 are longer and have different `t0`. Run `r004` is the cleanest.

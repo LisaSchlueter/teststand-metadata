@@ -44,8 +44,16 @@ LBNL ASIC `l1k65n`. Board `A`. The **buffer** is activated and we make use of th
 | Name | `l1k65n` |
 | Buffer | yes |
 | Long cables | no |
- V ref | `+ 2.5 V` |
+ `V_ref` | `+ 2.5 V` |
 
+The reference voltage of the ASIC `V_ref` was provided by a stationary power supply (model ?). 
+However, we observed that this power supply introduced noticeable noise into our waveforms. To address this, Marcos added a board with super-capacitors and LDOs between the ASIC and the power supply. The super-capacitors can either be pre-charged and then disconnected before the measurement or continuously charged throughout the measurement.
+| | |
+|:----------------| :----------------|
+|||
+| Run | ASIC power supply  |
+| `r002 - r003` | super-capacitors + LDO  were continuously charged throughout the measurement |
+| `r004` | super-capacitors + LDO  were pre-charged and disconnected from power supply during measurement |
 
 
 ## DAQ

@@ -1,3 +1,3 @@
 {"valid_from":"20240928T091132Z", "category":"cal", "apply":["energy_config_default.json", "energy_config_p01.json"]}
 {"valid_from":"20250116T063317Z", "category":"cal", "apply":["energy_config_default.json", "energy_config_p02.json"]}
-
+{"valid_from":"20250205T135205Z", "category":"cal", "apply":["energy_config_default.json", "energy_config_p01.json"]}

@@ -52,8 +52,8 @@ However, we observed that this power supply introduced noticeable noise into our
 |:----------------| :----------------|
 |||
 | Run | ASIC power supply  |
-| `r002 - r003` | super-capacitors + LDO  were continuously charged throughout the measurement |
-| `r004` | super-capacitors + LDO  were pre-charged and disconnected from power supply during measurement |
+| `r002`, `r003` | super-capacitors + LDO  were continuously charged throughout the measurement |
+| `r004`, `r005` | super-capacitors + LDO  were pre-charged and disconnected from power supply during measurement |
 
 
 ## DAQ
@@ -72,5 +72,5 @@ Oscilloscope Tektronix MSO44B. We record analog waveform signals.
 | | |
 
 ## Remarks and comments
-
+`r004`, `r005` were accidentally recorded in `.wfm` (instead of `.csv`). Additionally, `ch1` was probably recorded instead of `math` (difference between `ch1` and `ch2`).
 

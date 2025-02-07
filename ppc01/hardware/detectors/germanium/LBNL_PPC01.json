@@ -3,7 +3,7 @@
     "channel": 1,
     "type": "PPC",
     "production": {
-        "manufacturer": LBNL,
+        "manufacturer": "LBNL",
         "order": NaN,
         "crystal": NaN,
         "slice": NaN,

@@ -14,7 +14,7 @@ LBNL measurement protocol
 |:----------------| :----------------|
 | Setup name | `ppc01`|
 | period | 1 | 
-| run | 2 | 
+| runs | 2 - 5 | 
 | Location | LBNL, building 70,  room 70-141 |
 | Date of measurement (yyyy-mm-dd) | 2025-02-05 | 
 | Operators | Marcos Turqueti, Lisa Schlueter, Ryutaro Matsumoto | 
@@ -72,5 +72,5 @@ Oscilloscope Tektronix MSO44B. We record analog waveform signals.
 | | |
 
 ## Remarks and comments
-`r004`, `r005` were accidentally recorded in `.wfm` (instead of `.csv`). Additionally, `ch1` was probably recorded instead of `math` (difference between `ch1` and `ch2`).
+`r004`, `r005` were accidentally recorded in `.wfm` (instead of `.csv`). Additionally, `ch1` was probably recorded instead of `math` (difference between `ch1` and `ch2`). 
 

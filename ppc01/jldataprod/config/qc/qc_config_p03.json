@@ -1,0 +1,20 @@
+{
+    "default": {
+        "t0": {
+            "min": 6.0,
+            "max": 8.0
+        },
+        "e_trap": {
+            "min": 250.0
+        },
+        "blslope": {
+            "min": -1.0,
+            "max": 1.0,
+            "absmin": 0,
+            "absmax": 0.5
+        },
+        "tailslope": {
+            "absmax": 0.5
+        }
+    }
+}

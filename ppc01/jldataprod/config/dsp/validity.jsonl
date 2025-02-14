@@ -2,3 +2,6 @@
 {"valid_from":"20250116T063317Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p02.json"]}
 {"valid_from":"20250124T180751Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p02_r004.json"]}
 {"valid_from":"20250205T135205Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p01_r002.json"]}
+{"valid_from":"20250205T155625Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p03.json"]}
+
+

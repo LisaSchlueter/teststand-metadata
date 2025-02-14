@@ -13,10 +13,10 @@ LBNL measurement protocol
 | | |
 |:----------------| :----------------|
 | Setup name | `ppc01`|
-| period | 1 | 
-| runs | 6 - 10 | 
+| period | 3 | 
+| runs | 1 - 2 | 
 | Location | LBNL, building 70,  room 70-141 |
-| Date of measurement (yyyy-mm-dd) | 2025-02-06 to 2025-02-10 | 
+| Date of measurement (yyyy-mm-dd) | 2025-02-12  | 
 | Operators | Marcos Turqueti, Lisa Schlueter | 
 | Goal of measurement | Characterization of ASIC with **buffer** (but without long cables). Find optimzal operating voltage of detector.  |
 | | |
@@ -29,22 +29,9 @@ Germanium detector in vaccum cryostat. The pressure was kept to `~ 1e-7 hPa` wit
 | ------ | ---------------------------------------- |
 | Type   | PPC                                      |
 | Name   | `DetectorId(:LBNL_PP01)`  `ChannelId(1)` |
-| Weight | `~ 900 g`                          |
+| Weight | `~ 900 g`                                |
+| Bias voltage | `2.7 kV (± 0.02 kV) `. |
 |        |                                          |
-
-We changed the detector (operation) voltage from run to run to find the voltage with full depletion. The voltage varied within a run by `± 0.02 V`.   
-|         |                      |
-| ------- | -------------------- |
-| **Run** | **Detector voltage** |
-| `r006`  | `1.3 kV`             |
-| `r007`  | `1.6 kV`             |
-| `r008`  | `1.9 kV`             |
-| `r009`  | `2.2 kV`             |
-| `r010`  | `2.5 kV`             |
-| `r011`  | `2.7 kV`             |
-| `r012`  | `2.9 kV`             |
-| `r013`  | `3.0 kV`             |
-|         |                      |
 
 ## Radioactive source
 Co-60. Placed on top of vacuum cryostat with some styrofoam plates as distance keepers. 
@@ -63,20 +50,23 @@ The reference voltage of the ASIC `V_ref` was provided by a stationary power sup
 we added a board with super-capacitors and LDOs between the ASIC and the power supply. The super-capacitors were pre-charged and then disconnected before the measurement to provide low-noise power to the ASIC.
 
 ## DAQ
-Oscilloscope Tektronix MSO44B. We record analog waveform signals.
-
+Skutek Digitizer "FemtoDAQ Vireo". 
 | | |
 |:----------------| :----------------|
 |  |  | 
-| Sample rate | `62.5 MHz` | 
-| Number of samples | `8192` | 
-| Waveform length | `131.072 µs` |
-| Trigger threshold | `70.4 mV` |
+| Sample rate | `100 MHz` | 
+| Number of samples | `4096` | 
+| Waveform length | `40.96 µs` |
+| Trigger threshold (ADC) | 200 (channel 0) |
 | Resolution | `16` bit |
-| Coupling mode | `? coupled` | 
-| Trigger position approx. | `19.6 µs` (`15%` of waveform lengths ) | 
+| Coupling mode | `DC coupled` | 
+| Trigger position approx. | `8 µs` | 
 | | |
 
 ## Remarks and comments
 
-
+|          |                 |                       |
+| :------- | :-------------- | :-------------------- |
+| **runs** | **# waveforms** | **comment** |
+| `r001`   | 5,000           | first test            |
+| `r002`   | 100,000         |   first higher stat. data               |

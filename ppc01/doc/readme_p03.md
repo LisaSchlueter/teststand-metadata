@@ -18,7 +18,7 @@ LBNL measurement protocol
 | Location | LBNL, building 70,  room 70-141 |
 | Date of measurement (yyyy-mm-dd) | 2025-02-12  | 
 | Operators | Marcos Turqueti, Lisa Schlueter | 
-| Goal of measurement | Characterization of ASIC with **buffer** (but without long cables). Find optimzal operating voltage of detector.  |
+| Goal of measurement | First data with new digitizer. Characterization of ASIC with **buffer** (but without the very long cables)  |
 | | |
 
 ## Experimental setup description
@@ -43,7 +43,7 @@ LBNL ASIC `l1k65n`. Board `A`. The **buffer** is activated and we make use of th
 |||
 | Name | `l1k65n` |
 | Buffer | yes |
-| Long cables | no |
+| Cables | `~ 2 m` |
  `V_ref` | `+ 2.6 V` |
 
 The reference voltage of the ASIC `V_ref` was provided by a stationary power supply (Keysight `E36313A`). To reduce noise 

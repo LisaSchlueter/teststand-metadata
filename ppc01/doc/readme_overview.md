@@ -11,7 +11,7 @@ The follow the following naming scheme: `readme_<period>_<runs>.md`.
 }
 </style>
 
-## Overview table: period 1 `p01`: ASIC + oscilloscpe
+## Overview table: period 1 `p01`: ASIC + Oscilloscope
 All runs in this period are taken this the **ASIC L1k65n**. 
 |                   |                 |            |            |                                                                                                              |
 | :---------------- | :-------------- | :--------- | :--------- | :----------------------------------------------------------------------------------------------------------- |
@@ -26,7 +26,7 @@ All runs in this period are taken this the **ASIC L1k65n**.
 
 
 
-## Overview table: period 2 `p02`: GFET
+## Overview table: period 2 `p02`: GFET + Oscilloscope
 All runs in this period are taken this the **GFET  xxx**. 
 |          |                 |              |                       |
 | :------- | :-------------- | :----------- | :-------------------- |

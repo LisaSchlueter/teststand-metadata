@@ -3,5 +3,6 @@
 {"valid_from":"20250124T180751Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p02_r004.json"]}
 {"valid_from":"20250205T135205Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p01_r002.json"]}
 {"valid_from":"20250205T155625Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p03.json"]}
-
-
+{"valid_from":"20250209T103008Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p03_r003.json"]}
+{"valid_from":"20250213T121147Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p03_r015.json"]}
+{"valid_from":"20250213T132203Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p03_r017.json"]}

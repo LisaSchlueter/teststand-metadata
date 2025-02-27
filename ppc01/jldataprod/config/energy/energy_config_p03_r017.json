@@ -1,0 +1,45 @@
+{
+    "default": {
+        "source": "co60",
+        "co60_lines": {
+            "val": [1173.237, 1332.501],
+            "unit": "keV"
+        },
+        "co60_names":  ["Co60a", "Co60b"],
+        "co60_left_window_sizes":   {
+            "val": [25.0,      25.0],
+            "unit": "keV"
+        },
+        "co60_right_window_sizes":  {
+            "val": [25.0,      25.0],
+            "unit": "keV"
+        },
+        "co60_fit_func": ["gamma_def", "gamma_def"],
+        "n_bins": 15000,
+        "quantile_perc": "NaN",
+        "binning_peak_window": {
+            "val": 4,
+            "unit": "keV"
+        },
+        "peakfinder_σ": 1.0, 
+        "peakfinder_threshold" : 40.0, 
+        "left_peak_quantile":0.4, 
+        "right_peak_quantile":1.0, 
+        "left_bin_quantile":0.65,
+        "right_bin_quantile":0.985,
+        "nbins_min": 50,
+        "cal_pol_order": 1,
+        "cal_fit_excluded_peaks": [""],
+        "cal_fit_max_tolerance": {
+            "val": 1.5,
+            "unit": "keV"
+        },
+        "fwhm_pol_order": 1,
+        "fwhm_fit_excluded_peaks": [""],
+        "fwhm_fit_min_fwhm": {
+            "val": 1.0,
+            "unit": "keV"
+        },
+        "energy_types": ["e_trap", "e_cusp"]
+    }
+}

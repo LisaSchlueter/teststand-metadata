@@ -58,7 +58,7 @@ Skutek Digitizer "FemtoDAQ Vireo".
 | Number of samples | `4096` | 
 | Waveform length | `40.96 µs` |
 | Trigger threshold (ADC) | 200 (channel 0) |
-| Resolution | `16` bit | 
+| Resolution | `14` bit | 
 | Pulse Height Window | `2.00`µs |
 | Pulse Height Avaraging Window | `0.32` µs(r003) ,0.16, 0.08, 0.04, 0.02, `0.01` µs(=no averaging, r008)|
 | Trigger Averaging Window | `0.16` µs|

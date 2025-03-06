@@ -59,7 +59,7 @@ Used one of the optimal configuration of parameters.
 | Number of samples | `4096` | 
 | Waveform length | `40.96 µs` |
 | Trigger threshold (ADC) | 200 (channel 0) |
-| Resolution | `16` bit | 
+| Resolution | `14` bit | 
 | Pulse Height Window | `5.00`µs |
 | Pulse Height Avaraging Window | `0.32`µs|
 | Trigger Averaging Window | `0.32` µs |

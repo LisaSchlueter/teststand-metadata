@@ -58,7 +58,7 @@ Skutek Digitizer "FemtoDAQ Vireo".
 | Number of samples | `4096` | 
 | Waveform length | `40.96 µs` |
 | Trigger threshold (ADC) | 200 (channel 0) |
-| Resolution | `16` bit |
+| Resolution | `14` bit |
 | Coupling mode | `DC coupled` | 
 | Termination | likely `1 kΩ` (options: `50 Ω`, `1 kΩ`, or `10 kΩ`) | 
 | Digital offset | `0` | 

@@ -59,7 +59,7 @@ Used PHW of 30.00µs and PHAW of 0.08, 0.32µs, which showed good energy resolut
 | Number of samples | `4096` | 
 | Waveform length | `40.96 µs` |
 | Trigger threshold (ADC) | 200 (channel 0) |
-| Resolution | `16` bit | 
+| Resolution | `14` bit | 
 | Pulse Height Window | `30.00`µs |
 | Pulse Height Avaraging Window | `0.08`µs(r017-r021), `0.32`µs(r022-026)|
 | Trigger Averaging Window | ranging `0.02`, 0.04, 0.08, 0.16,  `0.32` µs for each PHAW|

@@ -43,7 +43,7 @@ LBNL ASIC `l1k65n`. Board `A`. The **buffer** is activated and we make use of th
 |||
 | Name | `l1k65n` |
 | Buffer | yes |
-| Cables | `~2m(r039, r042) ~4m(r040, r043) / ~6.4m(r041, r044)` |
+| Cables | `~2m(r039, r044) ~4m(r040, r043) / ~6.4m(r041, r042)` |
  `V_ref` | `+ 2.6 V` |
 
 The reference voltage of the ASIC `V_ref` was provided by a stationary power supply (Keysight `E36313A`). To reduce noise 
@@ -74,6 +74,7 @@ Used one of the optimal configuration of parameters.
 |          |                 |                       |
 | :------- | :-------------- | :-------------------- |
 | **runs** | **# waveforms** | **comment** |
-| `r039-041`   | 50,000/ea      |  with 2, 4, 6.4m cables(this order) |
-| `r042-044`   | 100,000/ea         | with 2, 4, 6.4m cables(this order)   |
+| `r039-041`   | 50,000/each      |  with 2, 4, 6.4m cables(this order) |
+| `r042-044`   | 100,000/each         | with 6.4, 4, 2m cables(this order)   |
+
 

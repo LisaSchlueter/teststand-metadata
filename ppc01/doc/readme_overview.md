@@ -48,5 +48,8 @@ All runs in this period are taken this the **ASIC L1k65n** (same as `p01`). In c
 | `r003`-`r014`  | 3,000         | yes        | short      | Optimization of DAQ Parameters |
 | `r015`-`r016`  | 3,000         | yes        | short      | Check for decay time with longer charge-time for Capasitor |
 | `r017`-`r026`  | 5,000         | yes        | short      | Optimization of DAQ prameters |
-| `r027`-`r030`  | 5,000 or 50000       | yes        | ~4m      | With longer cables |
-| `r031`-`r036`  | 50000       | yes        | ~4m and 2m     | Comparison of different cable-lengths under same setting  |
+| `r027`-`r030`  | 5,000 or 50,000       | yes        | ~4m      | With longer cables |
+| `r031`-`r036`  | 50,000       | yes        | ~4m and 2m     | Comparison of different cable-lengths under same setting  |
+| `r037`-`r038` | 3,000 | yes | 2m | reference data for decay time constant under 90.5K |
+| `r039`-`r041` | 50,000 | yes | 2m, 4m, 6.4m| Examine influence of cable length on the energy resolution under 90.5K |
+| `r042`-`r044` | 100,000 | yes | 2m, 4m, 6.4m| 100,000 samples to reduce statistical errors |

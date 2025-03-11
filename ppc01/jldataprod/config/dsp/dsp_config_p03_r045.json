@@ -119,7 +119,7 @@
             },
             "nbins": 100,
             "rel_cut_fit": 0.25,
-            "peak": "Co60a"
+            "peak": "Tl208FEP"
         }
     }
 }

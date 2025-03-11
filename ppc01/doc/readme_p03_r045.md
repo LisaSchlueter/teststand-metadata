@@ -14,11 +14,11 @@ LBNL measurement protocol
 |:----------------| :----------------|
 | Setup name | `ppc01`|
 | period | 3 | 
-| runs | 45 - | 
+| runs | 45 - 52 | 
 | Location | LBNL, building 70,  room 70-141 |
-| Date of measurement (yyyy-mm-dd) | 2025-03-07  | 
+| Date of measurement (yyyy-mm-dd) | 2025-03-10 and 2025-03-11  | 
 | Operators | Ryutaro Matsumoto, Lisa Schlueter | 
-| Goal of measurement | Characterization of ASIC with **buffer** and Th-228 source and different cable length |
+| Goal of measurement | Characterization of ASIC with **buffer** and **Th-228** source and different cable length |
 | | |
 
 ## Experimental setup description

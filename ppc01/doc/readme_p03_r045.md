@@ -66,6 +66,7 @@ Used one of the optimal configuration of parameters.
 | Trigger position approx. | `8 µs` | 
 | Analog Offsets | `-10`, `-100`|
 | Digital Offsets | `0`, `0`|
+| Termination | `1 kΩ` 
 | | | 
 
 

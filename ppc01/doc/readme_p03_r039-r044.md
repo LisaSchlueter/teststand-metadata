@@ -17,8 +17,8 @@ LBNL measurement protocol
 | runs | 39 - 44 | 
 | Location | LBNL, building 70,  room 70-141 |
 | Date of measurement (yyyy-mm-dd) | 2025-03-07  | 
-| Operators | Ryutaro Matsumoto | 
-| Goal of measurement | Characterization of ASIC with **buffer** with 2m, 4m, 6.4 cables  |
+| Operators | Ryutaro Matsumoto, Lisa Schlueter | 
+| Goal of measurement | Characterization of ASIC with **buffer** with 185 cm, 405 cm, 645 cm cables  |
 | | |
 
 ## Experimental setup description

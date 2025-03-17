@@ -118,7 +118,7 @@
                 "unit": "µs"
             },
             "nbins": 100,
-            "rel_cut_fit": 0.25,
+            "rel_cut_fit": 0.5,
             "peak": "Tl208FEP"
         }
     }

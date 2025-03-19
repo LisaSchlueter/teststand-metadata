@@ -11,11 +11,14 @@ The follow the following naming scheme: `readme_<category>_<period>_<runs>.md`.
 </style>
 
 ## Overview table: period 1 `p01`   
-All runs in this period are taken this the **ASIC L1k65n**. The Germanium detector is not connected. 
-|          |                 |                 |            |                       |
-| :------- | :-------------- | :-------------- | :--------- | :-------------------- |
-| **runs** | **# waveforms** | **temperature** | **cables** | **short description** |
-| `r001`   |                 | 295 K (room)    | 185 cm     | pulser  ` C = 500 fF` |
-|          |                 |                 |            |                       |
+All runs in this period are taken this the **ASIC L1k65n + buffer**. The Germanium detector is not connected. For more detail, see `readme_bch_p01.md`
+|               |                 |                 |            |                       |
+| :------------ | :-------------- | :-------------- | :--------- | :-------------------- |
+| **runs**      | **# waveforms** | **temperature** | **cables** | **short description** |
+| `r001 - r010` |                 | 295 K (room)    | 185 cm     | linearity data        |
+| `r011`        |                 | 295 K (room)    | 185 cm     | noise run             |
+| `r012`        |                 | 90 K            | 185 cm     | noise run             |
+| `r013 - r022` |                 | 90 K            | 185 cm     | linearity data        |
+|               |                 |                 |            |                       |
 
 

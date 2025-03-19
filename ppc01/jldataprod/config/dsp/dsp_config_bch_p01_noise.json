@@ -3,22 +3,6 @@
         "enc_pickoff_trap": {
             "val": 18.0,
             "unit": "µs"
-        },
-        "enc_pickoff_zac": {
-            "val": 18.0,
-            "unit": "µs"
-        }, 
-        "enc_pickoff_cusp": {
-            "val": 18.0,
-            "unit": "µs"
-        }, 
-        "flt_length_cusp": {
-            "val": 30.0,
-            "unit": "µs"
-        }, 
-        "flt_length_zac": {
-            "val": 30.0,
-            "unit": "µs"
         }, 
         "bl_window": {
             "min": {
@@ -26,27 +10,27 @@
                 "unit": "µs"
             }, 
             "max": {
-                "val": 20.0,
+                "val": 40.0,
                 "unit": "µs"
             }
         },
         "tail_window": {
             "min": {
-                "val": 30.0,
+                "val": 40.1,
                 "unit": "µs"
             }, 
             "max": {
-                "val": 130.0,
+                "val": 40.9,
                 "unit": "µs"
             }
         },
         "current_window": {
             "min": {
-                "val": 18.0,
+                "val": 7.0,
                 "unit": "µs"
             }, 
             "max": {
-                "val": 300.0,
+                "val": 30.0,
                 "unit": "µs"
             }
         },
@@ -62,20 +46,19 @@
         "t0_threshold": 0.01, 
         "inTraceCut_std_threshold": 5,
         "sg_flt_degree": 3,
-        "ft_qmin": 0.02,
-        "ft_qmax": 0.98,
+        
         "e_grid_trap" : {
             "rt": {
                 "start": {
-                    "val": 1.5,
+                    "val": 0.2,
                     "unit": "µs"
                 },
                 "stop": {
-                    "val": 6.0,
+                    "val": 2.6,
                     "unit": "µs"
                 },
                 "step": {
-                    "val": 0.5,
+                    "val": 0.2,
                     "unit": "µs"
                 }
             },
@@ -92,80 +75,6 @@
                     "val": 0.2,
                     "unit": "µs"
                 }
-            }
-        },
-        "e_grid_zac" : {
-            "rt": {
-                "start": {
-                    "val": 1.5,
-                    "unit": "µs"
-                },
-                "stop": {
-                    "val": 6.0,
-                    "unit": "µs"
-                },
-                "step": {
-                    "val": 0.5,
-                    "unit": "µs"
-                }
-            },
-            "ft": {
-                "start": {
-                    "val": 1.0,
-                    "unit": "µs"
-                },
-                "stop": {
-                    "val": 4.0,
-                    "unit": "µs"
-                },
-                "step": {
-                    "val": 0.2,
-                    "unit": "µs"
-                }
-            }
-        },
-        "e_grid_cusp" : {
-            "rt": {
-                "start": {
-                    "val": 1.5,
-                    "unit": "µs"
-                },
-                "stop": {
-                    "val": 6.0,
-                    "unit": "µs"
-                },
-                "step": {
-                    "val": 0.5,
-                    "unit": "µs"
-                }
-            },
-            "ft": {
-                "start": {
-                    "val": 1.0,
-                    "unit": "µs"
-                },
-                "stop": {
-                    "val": 4.0,
-                    "unit": "µs"
-                },
-                "step": {
-                    "val": 0.2,
-                    "unit": "µs"
-                }
-            }
-        },
-        "a_grid_wl_sg": {
-            "start": {
-                "val": 30.0,
-                "unit": "ns"
-            },
-            "stop": {
-                "val": 350.0,
-                "unit": "ns"
-            },
-            "step": {
-                "val": 32.0,
-                "unit": "ns"
             }
         },
         "flt_defaults": {
@@ -233,9 +142,7 @@
             "intrace_mintot": {
                 "val": 100.0,
                 "unit": "ns"
-            },
-            "ft_qmin": 0.02,
-            "ft_qmax": 0.98
+            }
         }
     
     },
@@ -338,7 +245,7 @@
             },
             "nbins": 75,
             "rel_cut_fit": 0.05,
-            "peak": "Co60a"
+            "peak": "all"
         }
     }
 }

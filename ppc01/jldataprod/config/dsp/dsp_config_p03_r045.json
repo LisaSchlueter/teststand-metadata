@@ -73,7 +73,7 @@
                     "unit": "µs"
                 },
                 "step": {
-                    "val": 0.2,
+                    "val": 0.1,
                     "unit": "µs"
                 }
             }
@@ -105,6 +105,10 @@
                     "unit": "µs"
                 }
             }
+        },
+        "kwargs_pars": {
+            "ft_qmin": 0.0,
+            "ft_qmax": 1.0
         }
     },
     "pz": {

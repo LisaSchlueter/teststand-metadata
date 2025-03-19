@@ -26,27 +26,27 @@
                 "unit": "µs"
             }, 
             "max": {
-                "val": 20.0,
+                "val": 6.5,
                 "unit": "µs"
             }
         },
         "tail_window": {
             "min": {
-                "val": 30.0,
+                "val": 8.5,
                 "unit": "µs"
             }, 
             "max": {
-                "val": 130.0,
+                "val": 40.9,
                 "unit": "µs"
             }
         },
         "current_window": {
             "min": {
-                "val": 18.0,
+                "val": 7.0,
                 "unit": "µs"
             }, 
             "max": {
-                "val": 300.0,
+                "val": 30.0,
                 "unit": "µs"
             }
         },
@@ -62,20 +62,19 @@
         "t0_threshold": 0.01, 
         "inTraceCut_std_threshold": 5,
         "sg_flt_degree": 3,
-        "ft_qmin": 0.02,
-        "ft_qmax": 0.98,
+        
         "e_grid_trap" : {
             "rt": {
                 "start": {
-                    "val": 1.5,
+                    "val": 0.2,
                     "unit": "µs"
                 },
                 "stop": {
-                    "val": 6.0,
+                    "val": 2.6,
                     "unit": "µs"
                 },
                 "step": {
-                    "val": 0.5,
+                    "val": 0.2,
                     "unit": "µs"
                 }
             },
@@ -234,8 +233,8 @@
                 "val": 100.0,
                 "unit": "ns"
             },
-            "ft_qmin": 0.02,
-            "ft_qmax": 0.98
+            "ft_qmin": 0.0,
+            "ft_qmax": 1.0
         }
     
     },
@@ -338,7 +337,7 @@
             },
             "nbins": 75,
             "rel_cut_fit": 0.05,
-            "peak": "Co60a"
+            "peak": "all"
         }
     }
 }

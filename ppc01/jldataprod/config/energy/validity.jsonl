@@ -3,4 +3,4 @@
 {"valid_from":"20250205T135205Z", "category":"cal", "apply":["energy_config_default.json", "energy_config_p01.json"]}
 {"valid_from":"20250205T155625Z", "category":"cal", "apply":["energy_config_default.json", "energy_config_p03.json"]}
 {"valid_from":"20250217T153437Z", "category":"cal", "apply":["energy_config_default.json", "energy_config_p03_r027.json"]}
-
+{"valid_from":"20250224T112325Z", "category":"cal", "apply":["energy_config_default.json", "energy_config_p03_r037.json"]}

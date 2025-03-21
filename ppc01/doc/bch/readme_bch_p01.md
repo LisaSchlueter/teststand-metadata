@@ -15,8 +15,8 @@ LBNL measurement protocol for benchtest "`bch`"
 | Setup name                       | `ppc01`                                                      |
 | period                           | 1                                                            |
 | Location                         | LBNL, building 70,  room 70-141                              |
-| Date of measurement (yyyy-mm-dd) | 2025-03-17 (`r001 - r011`),     2025-03-18   (`r012 - r022`) |
-| Operators                        | Lisa Schlueter, Marcos Turqueti,                               |
+| Date of measurement (yyyy-mm-dd) | 2025-03-17 (`r001 - r011`),     2025-03-18   (`r012 - r022`), 2025-03-20 (`r023 - r032`) |
+| Operators                        | Lisa Schlueter, Marcos Turqueti, Ryutaro Matsumoto     |
 | Goal of measurement              | Benchtest ASIC: Linearity and noise performance              |
 |                                  |                                                              |
 
@@ -42,6 +42,7 @@ LBNL ASIC `l1k65n` + buffer. Board `A`. We use a board with charged capacitors +
   - frequency = `20 Hz` 
   - pulse width = `30 ms`
   - fall edge = `20 ms`
+  - rise edge = `25 ns`
   - amplitude (peak-to-peak): varied `25 mV` - `500 mV`
 
 ## DAQ
@@ -60,12 +61,12 @@ Used one of the optimal configuration of parameters.
 | Analog Offsets (ch0, ch1)  | `-100`, `0`                          |
 | Digital Offsets (ch0, ch1) | `0`, `0`                             |
 | Termination                | `1 kΩ`                               |
-| Trigger on                 | pulser                               |
+| Trigger on                 | pulser  (Rise)                       |
 | Trigger Averaging Window   | `0.32` µs                            |
 | Trigger position approx.   | `8 µs`, exception: `r011 -> 40.9 µs` |
 | Trigger threshold          | 500 `r001`-`r004`                    |
 |                            | 300 `r005`                           |
-|                            | 100 `r006-r010`                      |
+|                            | 100 `r006-r010` ,  `r023-r032`       |
 |                            | 1 on ch0. `r11`, `r012`              |
 
 
@@ -96,12 +97,31 @@ Used one of the optimal configuration of parameters.
 | `r019`   | 5,000           | `300 mV`                | "                                                     |
 | `r020`   | 5,000           | `350 mV`                | "                                                     |
 | `r021`   | 5,000           | `400 mV`                | "                                                     |
-| `r022`   | 5,000           | `500 mV`                | "                                                     |
-|          |                 |                         |                                                       |
+| `r022`   | 5,000           | `500 mV`                | 
+"                                                     |
+| `r023`   | 5,000           | `25 mV`                | 
+"                                                     |
+| `r024`   | 5,000           | `50 mV`                | 
+"                                                     |
+| `r025`   | 5,000           | `100 mV`                | 
+"                                                     |
+| `r026`   | 5,000           | `150 mV`                | 
+"                                                     |
+| `r027`   | 5,000           | `200 mV`                | 
+"                                                     |
+| `r028`   | 5,000           | `250 mV`                | 
+"                                                     |
+| `r029`   | 5,000           | `300 mV`                | 
+"                                                     |
+| `r030`   | 5,000           | `350 mV`                | 
+"                                                     |
+| `r031`   | 5,000           | `400 mV`                | 
+"                                                     |
+| `r032`   | 5,000           | `500 mV`                | 
 
 
 ## Remarks and comments
-We see a "wiggle" in the waveform (CSA output), which likely comes from reflections in the cables. For `r012` - `r022`, we added a termination on the CSA output channel that is *not* used. The resistance has tuned so that the wiggle became minimal.
+We see a "wiggle" in the waveform (CSA output), which likely comes from reflections in the cables. For `r012` - `r022`, we added a termination on the CSA output channel that is *not* used. The resistance has tuned so that the wiggle became minimal. For `r023` - `r032`, new termination introduced to reduce relerection.
 
 
 

@@ -19,6 +19,6 @@ All runs in this period are taken this the **ASIC L1k65n + buffer**. The Germani
 | `r011`        |                 | 295 K (room)    | 185 cm     | noise run             |
 | `r012`        |                 | 90 K            | 185 cm     | noise run             |
 | `r013 - r022` |                 | 90 K            | 185 cm     | linearity data        |
-|               |                 |                 |            |                       |
+|  `r023 - r032`|                 | 90K                |    185cm        |  linearity data        |
 
 

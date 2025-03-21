@@ -7,11 +7,12 @@
             "val": 5,
             "unit": "keV"
         },
-        "peakfinder_σ": 5.0, 
+        "peakfinder_σ": 2.0, 
         "peakfinder_threshold" : 10.0, 
-        "left_peak_quantile":0.87,
-        "right_peak_quantile":0.999, 
-        "left_bin_quantile":0.25,
+        "peakfinder_gamma" : 7,
+        "left_peak_quantile":0.7,
+        "right_peak_quantile":1.0, 
+        "left_bin_quantile":0.2,
         "right_bin_quantile":0.5,
         "bin_width":0.01,
         "nbins_min": 50,
@@ -27,6 +28,7 @@
             "val": 1.0,
             "unit": "keV"
         },
+        "th228_fit_func": ["gamma_def", "gamma_def", "gamma_def", "gamma_tails_bckFlat", "gamma_minimal", "gamma_tails_bckFlat", "gamma_def"],
         "energy_types": ["e_trap"]
     }
 }

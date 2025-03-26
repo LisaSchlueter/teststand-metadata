@@ -55,7 +55,7 @@
                     "unit": "µs"
                 },
                 "stop": {
-                    "val": 3.4,
+                    "val": 4.0,
                     "unit": "µs"
                 },
                 "step": {
@@ -65,11 +65,11 @@
             },
             "ft": {
                 "start": {
-                    "val": 0.5,
+                    "val": 1.0,
                     "unit": "µs"
                 },
                 "stop": {
-                    "val": 3.0,
+                    "val": 4.0,
                     "unit": "µs"
                 },
                 "step": {

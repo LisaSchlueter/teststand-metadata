@@ -8,5 +8,7 @@
 {"valid_from":"20250213T132203Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p03_r017.json"]}
 {"valid_from":"20250217T153437Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p03_r027.json"]}
 {"valid_from":"20250224T112325Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p03_r037.json"]}
+{"valid_from":"20250227T121431Z", "category":"cal", "apply":["dsp_config_default.json", "dsp_config_p03_r045.json"]}
 {"valid_from":"20250306T130439Z", "category":"bch", "apply":["dsp_config_bch_default.json"]}
 {"valid_from":"20250306T145307Z", "category":"bch", "apply":["dsp_config_bch_default.json", "dsp_config_bch_p01_noise.json"]}
+{"valid_from":"20250308T081045Z", "category":"bch", "apply":["dsp_config_bch_default.json"]}

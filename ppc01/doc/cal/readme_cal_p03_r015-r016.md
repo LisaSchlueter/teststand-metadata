@@ -14,11 +14,11 @@ LBNL measurement protocol
 |:----------------| :----------------|
 | Setup name | `ppc01`|
 | period | 3 | 
-| runs | 17 - 26 | 
+| runs | 15 - 16 | 
 | Location | LBNL, building 70,  room 70-141 |
 | Date of measurement (yyyy-mm-dd) | 2025-02-24  | 
 | Operators | Alexey Drobizhev, Ryutaro Matsumoto | 
-| Goal of measurement | Trigger Averaging window length optimization as part of parameters Config optimization with new digitizer.  Characterization of ASIC with **buffer** (but without the very long cables)  |
+| Goal of measurement | Finding out the reason why the decay-times of r003-r014 were around 395µs, which is slower than that of the last results: 282µs  |
 | | |
 
 ## Experimental setup description
@@ -44,14 +44,13 @@ LBNL ASIC `l1k65n`. Board `A`. The **buffer** is activated and we make use of th
 | Name | `l1k65n` |
 | Buffer | yes |
 | Cables | `~ 2 m` |
- `V_ref` | `+ 2.59 V` |
+ `V_ref` | `+ 2.6 V` |
 
 The reference voltage of the ASIC `V_ref` was provided by a stationary power supply (Keysight `E36313A`). To reduce noise 
 we added a board with super-capacitors and LDOs between the ASIC and the power supply. The super-capacitors were pre-charged and then disconnected before the measurement to provide low-noise power to the ASIC.
 
 ## DAQ
 Skutek Digitizer "FemtoDAQ Vireo". 
-Used PHW of 30.00µs and PHAW of 0.08, 0.32µs, which showed good energy resolution in r003-r014.
 | | |
 |:----------------| :----------------|
 |  |  | 
@@ -59,10 +58,10 @@ Used PHW of 30.00µs and PHAW of 0.08, 0.32µs, which showed good energy resolut
 | Number of samples | `4096` | 
 | Waveform length | `40.96 µs` |
 | Trigger threshold (ADC) | 200 (channel 0) |
-| Resolution | `16` bit | 
+| Resolution | `14` bit | 
 | Pulse Height Window | `30.00`µs |
-| Pulse Height Avaraging Window | `0.08`µs(r017-r021), `0.32`µs(r022-026)|
-| Trigger Averaging Window | ranging `0.02`, 0.04, 0.08, 0.16,  `0.32` µs for each PHAW|
+| Pulse Height Avaraging Window | `0.32`µs|
+| Trigger Averaging Window | `0.16` µs|
 | Coupling mode | `DC coupled` | 
 | Trigger position approx. | `8 µs` | 
 | | |
@@ -72,6 +71,6 @@ Used PHW of 30.00µs and PHAW of 0.08, 0.32µs, which showed good energy resolut
 |          |                 |                       |
 | :------- | :-------------- | :-------------------- |
 | **runs** | **# waveforms** | **comment** |
-| `r017-021`   | 5000/ea         | PHAW = 0.08 µs  |
-| `r022-026`   | 5000/ea         | PHAW = 0.32 µs  |
+| `r015`   | 3000/ea         | Charged capasitor longer than before(Ic became 6mA), no change of decay time  |
+| `r016`   | 3000/ea         | Removed thermal pins, which left connected through r003 - r015, no change of decay time(smaller diviation of 0.24µs) |
 

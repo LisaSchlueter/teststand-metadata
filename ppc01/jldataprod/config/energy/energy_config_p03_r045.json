@@ -1,0 +1,34 @@
+{
+    "default": {
+        "source": "th228",
+        "n_bins": 15000,
+        "quantile_perc": "NaN",
+        "binning_peak_window": {
+            "val": 5,
+            "unit": "keV"
+        },
+        "peakfinder_σ": 2.0, 
+        "peakfinder_threshold" : 10.0, 
+        "peakfinder_gamma" : 7,
+        "left_peak_quantile":0.7,
+        "right_peak_quantile":1.0, 
+        "left_bin_quantile":0.2,
+        "right_bin_quantile":0.5,
+        "bin_width":0.01,
+        "nbins_min": 50,
+        "cal_pol_order": 1,
+        "cal_fit_excluded_peaks": ["Tl208DEP", "Tl208SEP"],
+        "cal_fit_max_tolerance": {
+            "val": 1.5,
+            "unit": "keV"
+        },
+        "fwhm_pol_order": 1,
+        "fwhm_fit_excluded_peaks": ["Tl208DEP", "Tl208SEP"],
+        "fwhm_fit_min_fwhm": {
+            "val": 1.0,
+            "unit": "keV"
+        },
+        "th228_fit_func": ["gamma_def", "gamma_def", "gamma_def", "gamma_tails_bckFlat", "gamma_minimal", "gamma_tails_bckFlat", "gamma_def"],
+        "energy_types": ["e_trap"]
+    }
+}

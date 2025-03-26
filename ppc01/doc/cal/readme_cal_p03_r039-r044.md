@@ -14,15 +14,15 @@ LBNL measurement protocol
 |:----------------| :----------------|
 | Setup name | `ppc01`|
 | period | 3 | 
-| runs | 27 - 30 | 
+| runs | 39 - 44 | 
 | Location | LBNL, building 70,  room 70-141 |
-| Date of measurement (yyyy-mm-dd) | 2025-02-28  | 
-| Operators | Marcos Turqueti, Ryutaro Matsumoto | 
-| Goal of measurement | Characterization of ASIC with **buffer** with 4m cables  |
+| Date of measurement (yyyy-mm-dd) | 2025-03-07  | 
+| Operators | Ryutaro Matsumoto, Lisa Schlueter | 
+| Goal of measurement | Characterization of ASIC with **buffer** with 185 cm, 405 cm, 645 cm cables  |
 | | |
 
 ## Experimental setup description
-Germanium detector in vaccum cryostat. The pressure was kept to `~ 1e-7 hPa` with a turbomolecular pump. The vacuum chamber is cooled via cold finger in liquid nitrogen dewar to `92.2~ 92.4 K`. 
+Germanium detector in vaccum cryostat. The pressure was kept to `~ 1e-7 hPa` with a turbomolecular pump. The vacuum chamber is cooled via cold finger in liquid nitrogen dewar to `90.5~ 90.6 K`. 
 
 ## Germanium detector
 |        |                                          |
@@ -30,7 +30,7 @@ Germanium detector in vaccum cryostat. The pressure was kept to `~ 1e-7 hPa` wit
 | Type   | PPC                                      |
 | Name   | `DetectorId(:LBNL_PP01)`  `ChannelId(1)` |
 | Weight | `~ 900 g`                                |
-| Bias voltage | `2.75 kV (± 0.02 kV) `. |
+| Bias voltage | `2.71 kV (± 0.02 kV) `. |
 |        |                                          |
 
 ## Radioactive source
@@ -43,7 +43,7 @@ LBNL ASIC `l1k65n`. Board `A`. The **buffer** is activated and we make use of th
 |||
 | Name | `l1k65n` |
 | Buffer | yes |
-| Cables | `~ 4 m` |
+| Cables | `~2m(r039, r044) ~4m(r040, r043) / ~6.4m(r041, r042)` |
  `V_ref` | `+ 2.6 V` |
 
 The reference voltage of the ASIC `V_ref` was provided by a stationary power supply (Keysight `E36313A`). To reduce noise 
@@ -59,12 +59,14 @@ Used one of the optimal configuration of parameters.
 | Number of samples | `4096` | 
 | Waveform length | `40.96 µs` |
 | Trigger threshold (ADC) | 200 (channel 0) |
-| Resolution | `16` bit | 
+| Resolution | `14` bit | 
 | Pulse Height Window | `5.00`µs |
 | Pulse Height Avaraging Window | `0.32`µs|
 | Trigger Averaging Window | `0.32` µs |
 | Coupling mode | `DC coupled` | 
 | Trigger position approx. | `8 µs` | 
+| Analog Offsets | `-5`, `-100`|
+| Digital Offsets | `0`, `0`|
 | | |
 
 ## Remarks and comments
@@ -72,6 +74,7 @@ Used one of the optimal configuration of parameters.
 |          |                 |                       |
 | :------- | :-------------- | :-------------------- |
 | **runs** | **# waveforms** | **comment** |
-| `r027-028`   | 5000, 50000       | With thermometer |
-| `r029-030`   | 5000, 50000         | Without thermometer  |
+| `r039-041`   | 50,000/each      |  with 2, 4, 6.4m cables(this order) |
+| `r042-044`   | 100,000/each         | with 6.4, 4, 2m cables(this order)   |
+
 

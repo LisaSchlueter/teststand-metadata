@@ -62,7 +62,8 @@
         "t0_threshold": 0.01, 
         "inTraceCut_std_threshold": 5,
         "sg_flt_degree": 3,
-        
+        "ft_qmin": 0.02,
+        "ft_qmax": 0.98,
         "e_grid_trap" : {
             "rt": {
                 "start": {
@@ -232,7 +233,9 @@
             "intrace_mintot": {
                 "val": 100.0,
                 "unit": "ns"
-            }
+            },
+            "ft_qmin": 0.02,
+            "ft_qmax": 0.98
         }
     
     },

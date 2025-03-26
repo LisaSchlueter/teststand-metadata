@@ -30,7 +30,7 @@ Germanium detector in vaccum cryostat. The pressure was kept to `~ 1e-7 hPa` wit
 | Type   | PPC                                      |
 | Name   | `DetectorId(:LBNL_PP01)`  `ChannelId(1)` |
 | Weight | `~ 900 g`                                |
-| Bias voltage | `2.69 kV (± 0.02 kV) `. |
+| Bias voltage | `2.75 kV (± 0.02 kV) `. |
 |        |                                          |
 
 ## Radioactive source
@@ -43,7 +43,7 @@ LBNL ASIC `l1k65n`. Board `A`. The **buffer** is activated and we make use of th
 |||
 | Name | `l1k65n` |
 | Buffer | yes |
-| Cables | `~2m /~ 4 m` |
+| Cables | `~ 4 m` |
  `V_ref` | `+ 2.6 V` |
 
 The reference voltage of the ASIC `V_ref` was provided by a stationary power supply (Keysight `E36313A`). To reduce noise 
@@ -59,8 +59,8 @@ Used one of the optimal configuration of parameters.
 | Number of samples | `4096` | 
 | Waveform length | `40.96 µs` |
 | Trigger threshold (ADC) | 200 (channel 0) |
-| Resolution | `16` bit | 
-| Pulse Height Window | `4.00, 5.00, 6.00`µs |
+| Resolution | `14` bit | 
+| Pulse Height Window | `5.00`µs |
 | Pulse Height Avaraging Window | `0.32`µs|
 | Trigger Averaging Window | `0.32` µs |
 | Coupling mode | `DC coupled` | 
@@ -72,6 +72,6 @@ Used one of the optimal configuration of parameters.
 |          |                 |                       |
 | :------- | :-------------- | :-------------------- |
 | **runs** | **# waveforms** | **comment** |
-| `r031-033`   | 50000/ea      |  with ~4m cables |
-| `r034-036`   | 50000/ea         | with ~2m cables  |
+| `r027-028`   | 5000, 50000       | With thermometer |
+| `r029-030`   | 5000, 50000         | Without thermometer  |
 

@@ -62,5 +62,23 @@
             "unit": "keV"
         },
         "energy_types": ["e_trap", "e_cusp", "e_trap_ctc", "e_cusp_ctc", "e_10410", "e_313", "e_535"]
+    },
+    "ctc": {
+        "default": {
+            "peak": {
+                "val": 1173.237,
+                "unit": "keV"
+            },
+            "left_window_size": {
+                "val": 25,
+                "unit": "keV"
+            },
+            "right_window_size": {
+                "val": 25,
+                "unit": "keV"
+            },
+            "ctc_order": 2,
+            "energy_types": ["e_trap"]
+        }
     }
 }

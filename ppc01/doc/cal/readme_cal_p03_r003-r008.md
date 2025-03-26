@@ -14,11 +14,11 @@ LBNL measurement protocol
 |:----------------| :----------------|
 | Setup name | `ppc01`|
 | period | 3 | 
-| runs | 9 - 14 | 
+| runs | 3 - 8 | 
 | Location | LBNL, building 70,  room 70-141 |
 | Date of measurement (yyyy-mm-dd) | 2025-02-20  | 
 | Operators | Alexey Drobizhev, Ryutaro Matsumoto | 
-| Goal of measurement | Pulse Height window length optimization as part of parameters Config optimization with new digitizer. Characterization of ASIC with **buffer** (but without the very long cables)  |
+| Goal of measurement | Pulse Height Averaging Window optimization as part of parameters Config optimization with new digitizer. Characterization of ASIC with **buffer** (but without the very long cables)  |
 | | |
 
 ## Experimental setup description
@@ -34,7 +34,7 @@ Germanium detector in vaccum cryostat. The pressure was kept to `~ 1e-7 hPa` wit
 |        |                                          |
 
 ## Radioactive source
-Co-60 10.4µCi. Placed on top of vacuum cryostat with 2 styrofoam plates as distance keepers. 
+Co-60 10µCi. Placed on top of vacuum cryostat with 2 styrofoam plates as distance keepers. 
 
 ## Electronics
 LBNL ASIC `l1k65n`. Board `A`. The **buffer** is activated and we make use of the differential output. The positive and negative output waveforms are subtracted frmo each other. We use a board with charged capacitors + LDO for the ASIC power supply. 
@@ -58,9 +58,9 @@ Skutek Digitizer "FemtoDAQ Vireo".
 | Number of samples | `4096` | 
 | Waveform length | `40.96 µs` |
 | Trigger threshold (ADC) | 200 (channel 0) |
-| Resolution | `16` bit | 
-| Pulse Height Window | `2.00`µs (r009), 5.00, 10.00, 20.00, 30.00, `40.00` µs(r014) |
-| Pulse Height Avaraging Window | `0.32`µs|
+| Resolution | `14` bit | 
+| Pulse Height Window | `2.00`µs |
+| Pulse Height Avaraging Window | `0.32` µs(r003) ,0.16, 0.08, 0.04, 0.02, `0.01` µs(=no averaging, r008)|
 | Trigger Averaging Window | `0.16` µs|
 | Coupling mode | `DC coupled` | 
 | Trigger position approx. | `8 µs` | 
@@ -71,6 +71,6 @@ Skutek Digitizer "FemtoDAQ Vireo".
 |          |                 |                       |
 | :------- | :-------------- | :-------------------- |
 | **runs** | **# waveforms** | **comment** |
-| `r009-014`   | 3000/ea         |Forgot to remove thermal pins. |
+| `r003-008`   | 3000/ea         |  Forgot to remove thermal pins  |
 
 

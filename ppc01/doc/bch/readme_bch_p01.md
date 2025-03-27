@@ -110,6 +110,9 @@ Used one of the optimal configuration of parameters.
 | `r031`   | 5,000           | `400 mV`                           | "                                                     |
 | `r032`   | 5,000           | `500 mV`                           | "                                                     |
 | `r33`    | 100,000         | not connected to ASIC + terminated | noise run `90.3K`, both CSA outputs recorded with DAQ |
+| `r33`    | 100,000         | not connected to ASIC + terminated | noise run `90.3K`, both CSA outputs recorded with DAQ |
+| `r34`    | 10,000          | not connected to ASIC + terminated | "" + improved shielding                               |
+| `r35`    | 10,000          | not connected to ASIC + terminated | "" + improved shielding                               |
 |          |                 |                                    |                                                       |
 
 

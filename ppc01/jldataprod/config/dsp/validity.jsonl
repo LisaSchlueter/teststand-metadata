@@ -12,3 +12,4 @@
 {"valid_from":"20250306T130439Z", "category":"bch", "apply":["dsp_config_bch_default.json"]}
 {"valid_from":"20250306T145307Z", "category":"bch", "apply":["dsp_config_bch_default.json", "dsp_config_bch_p01_noise.json"]}
 {"valid_from":"20250308T081045Z", "category":"bch", "apply":["dsp_config_bch_default.json"]}
+{"valid_from":"20250314T073217Z", "category":"bch", "apply":["dsp_config_bch_default.json", "dsp_config_bch_p01_noise.json"]}

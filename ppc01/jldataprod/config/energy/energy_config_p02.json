@@ -21,13 +21,13 @@
             "val": 4,
             "unit": "keV"
         },
-        "peakfinder_σ": 5.0, 
-        "peakfinder_threshold" : 30.0, 
+        "peakfinder_σ": 2.0, 
+        "peakfinder_threshold" : 50.0, 
         "left_peak_quantile":0.0, 
         "right_peak_quantile":1.0, 
-        "left_bin_quantile":0.0,
-        "right_bin_quantile":0.6,
-        "nbins_min": 20,
+        "left_bin_quantile":0.2,
+        "right_bin_quantile":0.5,
+        "nbins_min": 50,
         "cal_pol_order": 1,
         "cal_fit_excluded_peaks": ["Tl208DEP", "Tl208SEP"],
         "cal_fit_max_tolerance": {

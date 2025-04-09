@@ -1,6 +1,7 @@
 {
-    "cap_feedback": {
+    "cap_inj": {
         "val": 500.0,
         "unit": "fF"
-    }
+    },
+    "buffer": true
 }

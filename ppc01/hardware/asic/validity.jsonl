@@ -1,2 +1,4 @@
-{"valid_from":"20241017T105837Z", "category":"bch", "apply":["LBNL_l1k65n.json"]}
-{"valid_from":"20250306T130439Z", "category":"bch", "apply":["LBNL_l1k65n_buffer.json"]}
+{"valid_from":"20241017T105837Z", "category":"bch", "apply":["LBNL_l1k65n_default.json", "LBNL_l1k65n_3pF_100gain.json"]}
+{"valid_from":"20241022T103117Z", "category":"bch", "apply":["LBNL_l1k65n_default.json", "LBNL_l1k65n_3pF_48gain.json"]}
+{"valid_from":"20250306T130439Z", "category":"bch", "apply":["LBNL_l1k65n_default.json", "LBNL_l1k65n_p01_1gain.json"]}
+{"valid_from":"20250404T211829Z", "category":"bch", "apply":["LBNL_l1k65n_default.json", "LBNL_l1k65n_p01_11gain.json"]}

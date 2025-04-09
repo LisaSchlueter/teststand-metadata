@@ -10,15 +10,15 @@ LBNL measurement protocol for benchtest "`bch`"
 </style>
 
 ## General measurement information
-|                                  |                                                              |
-| :------------------------------- | :----------------------------------------------------------- |
-| Setup name                       | `ppc01`                                                      |
-| period                           | 1                                                            |
-| Location                         | LBNL, building 70,  room 70-141                              |
-| Date of measurement (yyyy-mm-dd) | 2025-03-17 (`r001 - r011`),     2025-03-18   (`r012 - r022`), 2025-03-20 (`r023 - r032`), 2025-03-25 (`r33`) |
-| Operators                        | Lisa Schlueter, Marcos Turqueti, Ryutaro Matsumoto     |
-| Goal of measurement              | Benchtest ASIC: Linearity and noise performance              |
-|                                  |                                                              |
+|                                  |                                                                                                                                                                      |
+| :------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Setup name                       | `ppc01`                                                                                                                                                              |
+| period                           | 1                                                                                                                                                                    |
+| Location                         | LBNL, building 70,  room 70-141                                                                                                                                      |
+| Date of measurement (yyyy-mm-dd) | 2025-03-17 (`r001 - r011`),     2025-03-18   (`r012 - r022`), 2025-03-20 (`r023 - r032`), 2025-03-25 (`r33`), 2025-03-26 (`r034 - r035`), 2025-04-04 (`r036 - r038`) |
+| Operators                        | Lisa Schlueter, Marcos Turqueti, Ryutaro Matsumoto                                                                                                                   |
+| Goal of measurement              | Benchtest ASIC: Linearity and noise performance                                                                                                                      |
+|                                  |                                                                                                                                                                      |
 
 ## Experimental setup description
 - ASIC in vacuum chamber, but kept at atmospheric pressure (no vacuum). In this setup, the chamber is used for em-shielding. 
@@ -48,73 +48,82 @@ LBNL ASIC `l1k65n` + buffer. Board `A`. We use a board with charged capacitors +
 ## DAQ
 Skutek Digitizer "FemtoDAQ Vireo". 
 Used one of the optimal configuration of parameters.
-|                            |                                            |
-| :------------------------- | :----------------------------------------- |
-|                            |                                            |
-| Sample rate                | `100 MHz`                                  |
-| Number of samples          | `4096`                                     |
-| Waveform length            | `40.96 µs`                                 |
-| Resolution                 | `14` bit                                   |
-| Coupling mode              | `DC coupled`                               |
-| channel 0                  | CSA output positive                        |
-| channel 1                  | pulser                                     |
-| Analog Offsets (ch0, ch1)  | `-100`, `0`                                |
-| Digital Offsets (ch0, ch1) | `0`, `0`                                   |
-| Termination                | `1 kΩ`                                     |
-| Trigger on                 | pulser  (Rise)                             |
-| Trigger Averaging Window   | `0.32` µs                                  |
-| Trigger position approx.   | `8 µs`, exception: `noise runs -> 40.9 µs` |
-| Trigger threshold          | 500 `r001`-`r004`                          |
-|                            | 300 `r005`                                 |
-|                            | 100 `r006-r010` ,  `r023-r032`             |
-|                            | 1 on ch0. `r11`, `r012`, `r33`             |
-|                            |                                            |
+|                            |                                                       |
+| :------------------------- | :---------------------------------------------------- |
+|                            |                                                       |
+| Sample rate                | `100 MHz`                                             |
+| Number of samples          | `4096`                                                |
+| Waveform length            | `40.96 µs`  (`r001 - r035`)  , `81.92 µs`  (`r036` +) |
+| Resolution                 | `14` bit                                              |
+| Coupling mode              | `DC coupled`                                          |
+| channel 0                  | CSA output positive                                   |
+| channel 1                  | pulser                                                |
+| Analog Offsets (ch0, ch1)  | `-100`, `0`                                           |
+| Digital Offsets (ch0, ch1) | `0`, `0`                                              |
+| Termination                | `1 kΩ`                                                |
+| Trigger on                 | pulser  (Rise)                                        |
+| Trigger Averaging Window   | `0.32` µs                                             |
+| Trigger position approx.   | `8 µs`, exception: `noise runs -> 40.9 µs`            |
+| Trigger threshold          | 500 `r001`-`r004`                                     |
+|                            | 300 `r005`                                            |
+|                            | 100 `r006-r010` ,  `r023-r032`                        |
+|                            | 1 on ch0. `r11`, `r012`, `r33`                        |
+|                            |                                                       |
 
 
 ## Run overview:
 
-|          |                 |                                    |                                                             |
-| :------- | :-------------- | :--------------------------------- | :---------------------------------------------------------- |
-| **runs** | **# waveforms** | **pulser voltage (pp)**            | **comment**                                                 |
-| `r001`   | 5,000           | `300 mV`                           | room temperature, not-used CSA output not terminated.       |
-| `r002`   | 5,000           | `400 mV`                           | "                                                           |
-| `r003`   | 5,000           | `500 mV`                           | "                                                           |
-| `r004`   | 5,000           | `100 mV`                           | "                                                           |
-| `r005`   | 5,000           | `50 mV`                            | "                                                           |
-| `r006`   | 5,000           | `25 mV`                            | "                                                           |
-| `r007`   | 5,000           | `150 mV`                           | "                                                           |
-| `r008`   | 5,000           | `200 mV`                           | "                                                           |
-| `r009`   | 5,000           | `250 mV`                           | "                                                           |
-| `r010`   | 5,000           | `350 mV`                           | "                                                           |
-| `r011`   | 100,000         | not connected to ASIC              | ", noise run                                                |
-|          |                 |                                    |                                                             |
-| `r012`   | 100,000         | not connected to ASIC              | noise run. **89.9 K**, not-used CSA output terminated       |
-| `r013`   | 5,000           | `25 mV`                            | **89.9 K**, not-used CSA output terminated                  |
-| `r014`   | 5,000           | `50 mV`                            | "                                                           |
-| `r015`   | 5,000           | `100 mV`                           | "                                                           |
-| `r016`   | 5,000           | `150 mV`                           | "                                                           |
-| `r017`   | 5,000           | `200 mV`                           | "                                                           |
-| `r018`   | 5,000           | `250 mV`                           | "                                                           |
-| `r019`   | 5,000           | `300 mV`                           | "                                                           |
-| `r020`   | 5,000           | `350 mV`                           | "                                                           |
-| `r021`   | 5,000           | `400 mV`                           | "                                                           |
-| `r022`   | 5,000           | `500 mV`                           | "                                                           |
-| `r023`   | 5,000           | `25 mV`                            | "                                                           |
-| `r024`   | 5,000           | `50 mV`                            | "                                                           |
-| `r025`   | 5,000           | `100 mV`                           | "                                                           |
-| `r026`   | 5,000           | `150 mV`                           | "                                                           |
-| `r027`   | 5,000           | `200 mV`                           | "                                                           |
-| `r028`   | 5,000           | `250 mV`                           | "                                                           |
-| `r029`   | 5,000           | `300 mV`                           | "                                                           |
-| `r030`   | 5,000           | `350 mV`                           | "                                                           |
-| `r031`   | 5,000           | `400 mV`                           | "                                                           |
-| `r032`   | 5,000           | `500 mV`                           | "                                                           |
-| `r33`    | 100,000         | not connected to ASIC + terminated | noise run `90.3K`, both CSA outputs recorded with DAQ       |
-| `r33`    | 100,000         | not connected to ASIC + terminated | noise run `90.3K`, both CSA outputs recorded with DAQ       |
-| `r34`    | 10,000          | not connected to ASIC + terminated | "" + improved shielding                                     |
-| `r35`    | 10,000          | not connected to ASIC + terminated | "" + improved shielding                                     |
-| `r36`    | 5,000           | not connected to ASIC + terminated | noise run `90.0K`, use additional amplitfier with gain 11.9 |
-|          |                 |                                    |                                                             |
+|          |                 |                                    |                                                                                      |
+| :------- | :-------------- | :--------------------------------- | :----------------------------------------------------------------------------------- |
+| **runs** | **# waveforms** | **pulser voltage (pp)**            | **comment**                                                                          |
+| `r001`   | 5,000           | `300 mV`                           | room temperature, not-used CSA output not terminated.                                |
+| `r002`   | 5,000           | `400 mV`                           | "                                                                                    |
+| `r003`   | 5,000           | `500 mV`                           | "                                                                                    |
+| `r004`   | 5,000           | `100 mV`                           | "                                                                                    |
+| `r005`   | 5,000           | `50 mV`                            | "                                                                                    |
+| `r006`   | 5,000           | `25 mV`                            | "                                                                                    |
+| `r007`   | 5,000           | `150 mV`                           | "                                                                                    |
+| `r008`   | 5,000           | `200 mV`                           | "                                                                                    |
+| `r009`   | 5,000           | `250 mV`                           | "                                                                                    |
+| `r010`   | 5,000           | `350 mV`                           | "                                                                                    |
+| `r011`   | 100,000         | not connected to ASIC              | ", noise run                                                                         |
+|          |                 |                                    |                                                                                      |
+| `r012`   | 100,000         | not connected to ASIC              | noise run. **89.9 K**, not-used CSA output terminated                                |
+| `r013`   | 5,000           | `25 mV`                            | **89.9 K**, not-used CSA output terminated                                           |
+| `r014`   | 5,000           | `50 mV`                            | "                                                                                    |
+| `r015`   | 5,000           | `100 mV`                           | "                                                                                    |
+| `r016`   | 5,000           | `150 mV`                           | "                                                                                    |
+| `r017`   | 5,000           | `200 mV`                           | "                                                                                    |
+| `r018`   | 5,000           | `250 mV`                           | "                                                                                    |
+| `r019`   | 5,000           | `300 mV`                           | "                                                                                    |
+| `r020`   | 5,000           | `350 mV`                           | "                                                                                    |
+| `r021`   | 5,000           | `400 mV`                           | "                                                                                    |
+| `r022`   | 5,000           | `500 mV`                           | "                                                                                    |
+| `r023`   | 5,000           | `25 mV`                            | "                                                                                    |
+| `r024`   | 5,000           | `50 mV`                            | "                                                                                    |
+| `r025`   | 5,000           | `100 mV`                           | "                                                                                    |
+| `r026`   | 5,000           | `150 mV`                           | "                                                                                    |
+| `r027`   | 5,000           | `200 mV`                           | "                                                                                    |
+| `r028`   | 5,000           | `250 mV`                           | "                                                                                    |
+| `r029`   | 5,000           | `300 mV`                           | "                                                                                    |
+| `r030`   | 5,000           | `350 mV`                           | "                                                                                    |
+| `r031`   | 5,000           | `400 mV`                           | "                                                                                    |
+| `r032`   | 5,000           | `500 mV`                           | "                                                                                    |
+| `r033`   | 100,000         | not connected to ASIC + terminated | noise run `90.3K`, both CSA outputs recorded with DAQ                                |
+| `r033`   | 100,000         | not connected to ASIC + terminated | noise run `90.3K`, both CSA outputs recorded with DAQ                                |
+| `r034`   | 10,000          | not connected to ASIC + terminated | "" + improved shielding                                                              |
+| `r035`   | 10,000          | not connected to ASIC + terminated | "" + improved shielding                                                              |
+| `r036`   | 5,000           | not connected to ASIC + terminated | noise run `90.0K`, use additional amplitfier with gain 11.9, CSA input was grounded! |
+| `r037`   | 50,000          | not connected to ASIC + terminated | noise run `90.0K`, use additional amplitfier with gain 11.9, CSA input was grounded! |
+| `r038`   | 100             | not connected to ASIC + terminated | "", but with oscilloscope (extra long waveform), CSA input was grounded!             |
+| `r039`   | 5,00            | not connected to ASIC + terminated | noise run. `133 K`,  use additional amplitfier with gain 11.9, pulser connected      |
+| `r040`   | 5,000           | not connected to ASIC + terminated | "                                                                                    |
+| `r041`   | 5,000           | not connected to ASIC + terminated | "                                                                                    |
+| `r042`   | 5,000           | not connected to ASIC + terminated | "                                                                                    |
+| `r043`   | 10,000          | not connected to ASIC + terminated | "                                                                                    |
+ `r044`   | 5,000          | not connected to ASIC + terminated | "   & change termination to `10k`   termination                                                                                      |
+  `r045`   | 5,000          | not connected to ASIC + terminated | "  & change termination to `50`         |
+|          |                 |                                    |                                                                                      |
 
 
 ## Remarks and comments

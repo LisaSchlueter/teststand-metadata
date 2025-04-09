@@ -1,0 +1,10 @@
+{
+    "cap_feedback": {
+        "val": 3000.0,
+        "unit": "fF"
+    },
+    "cap_inj": {
+        "val": 3000.0,
+        "unit": "fF"
+    }
+}

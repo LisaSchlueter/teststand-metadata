@@ -1,0 +1,251 @@
+{   
+    "default": {
+        "enc_pickoff_trap": {
+            "val": 1000.0,
+            "unit": "µs"
+        }, 
+        "bl_window": {
+            "min": {
+                "val": 0.0,
+                "unit": "µs"
+            }, 
+            "max": {
+                "val": 1999.0,
+                "unit": "µs"
+            }
+        },
+        "tail_window": {
+            "min": {
+                "val": 1999.1,
+                "unit": "µs"
+            }, 
+            "max": {
+                "val": 1999.9,
+                "unit": "µs"
+            }
+        },
+        "current_window": {
+            "min": {
+                "val": 7.0,
+                "unit": "µs"
+            }, 
+            "max": {
+                "val": 30.0,
+                "unit": "µs"
+            }
+        },
+        "qdrift_int_length": {
+            "val": [2.5, 5.0],
+            "unit": "µs"
+        },
+        "lq_int_length": {
+            "val": [2.5, 5.0],
+            "unit": "µs"
+        },        
+
+        "t0_threshold": 0.01, 
+        "inTraceCut_std_threshold": 5,
+        "sg_flt_degree": 3,
+        
+        "e_grid_trap" : {
+            "rt": {
+                "start": {
+                    "val": 0.2,
+                    "unit": "µs"
+                },
+                "stop": {
+                    "val": 2.6,
+                    "unit": "µs"
+                },
+                "step": {
+                    "val": 0.2,
+                    "unit": "µs"
+                }
+            },
+            "ft": {
+                "start": {
+                    "val": 1.0,
+                    "unit": "µs"
+                },
+                "stop": {
+                    "val": 4.0,
+                    "unit": "µs"
+                },
+                "step": {
+                    "val": 0.2,
+                    "unit": "µs"
+                }
+            }
+        },
+        "flt_defaults": {
+            "sg":
+                {
+                    "val": 100.0,
+                    "unit": "ns"
+                },
+            "trap":
+                {
+                    "rt": {
+                        "val": 2.5,
+                        "unit": "µs"
+                    },
+                    "ft": {
+                        "val": 1.0,
+                        "unit": "µs"
+                    }
+                },
+            "zac": {
+                "rt": {
+                    "val": 5.0,
+                    "unit": "µs"
+                },
+                "ft": {
+                    "val": 2.5,
+                    "unit": "µs"
+                }
+            },
+            "cusp": {
+                "rt": {
+                    "val": 1.0,
+                    "unit": "µs"
+                },
+                "ft": {
+                    "val": 3.0,
+                    "unit": "µs"
+                }
+            }
+        },
+        "kwargs_pars": {
+            "sig_interpolation_length": {
+                "val": 700,
+                "unit": "ns"
+            },
+            "sig_interpolation_order": 3,
+            "int_interpolation_length": {
+                "val": 100,
+                "unit": "ns"
+            },
+            "int_interpolation_order": 3,
+            "fc_bit_depth": 16,
+            "t0_flt_pars": {
+                "val": [40.0, 100.0, 2000.0],
+                "unit": "ns"
+            },
+            "t0_mintot": {
+                "val": 1500.0,
+                "unit": "ns"
+            },
+            "tx_mintot": {
+                "val": 32.0,
+                "unit": "ns"
+            },
+            "intrace_mintot": {
+                "val": 100.0,
+                "unit": "ns"
+            }
+        }
+    
+    },
+    "optimization": {
+        "default": {
+            "trap": {
+                "min_enc": -20.0,
+                "max_enc": 20.0,
+                "nbins_enc_sigmas": 6000,
+                "rel_cut_fit_enc_sigmas": 0.1,
+                "ft_fixed": {
+                    "val": 1.5,
+                    "unit": "µs"
+                },
+                "min_e_fep": 2000.0,
+                "max_e_fep": 8000.0,
+                "nbins_e_fep": 1000,
+                "rel_cut_fit_e_fep": 0.1
+            },
+            "cusp": {
+                "min_enc": -400.0,
+                "max_enc": 400.0,
+                "nbins_enc_sigmas": 1000,
+                "rel_cut_fit_enc_sigmas": 0.1,
+                "ft_fixed": {
+                    "val": 1.5,
+                    "unit": "µs"
+                },
+                "min_e_fep": 80000.0,
+                "max_e_fep": 480000.0,
+                "nbins_e_fep": 1000,
+                "rel_cut_fit_e_fep": 0.1
+            },
+            "zac": {
+                "min_enc": -400.0,
+                "max_enc": 400.0,
+                "nbins_enc_sigmas": 1000,
+                "rel_cut_fit_enc_sigmas": 0.1,
+                "ft_fixed": {
+                    "val": 1.5,
+                    "unit": "µs"
+                },
+                "min_e_fep": 80000.0,
+                "max_e_fep": 480000.0,
+                "nbins_e_fep": 1000,
+                "rel_cut_fit_e_fep": 0.1
+            },
+            "sg": {
+                "dep_sep_quantile": 0.5,
+                "dep": {
+                    "val": 1592.53,
+                    "unit": "keV"
+                },
+                "dep_window": {
+                        "val": [12.0, 10.0],
+                        "unit": "keV"
+                }, 
+                "nbins_dep_cut": 500,
+                "dep_rel_cut": 0.5,
+                "sep": {
+                    "val": 2103.53,
+                    "unit": "keV"
+                },
+                "sep_window": {
+                        "val": [25.0, 25.0],
+                        "unit": "keV"
+                }, 
+                "min_aoe_quantile": 0.1,
+                "min_aoe_offset": {
+                    "val": 0.0,
+                    "unit": "keV^-1"
+                },
+                "max_aoe_quantile": 0.99,
+                "max_aoe_offset": {
+                    "val": 0.05,
+                    "unit": "keV^-1"
+                },
+                "cuts": {
+                    "dep": {
+                        "qc": "qc_label == 0 && t50 > 45µs && t50 < 50µs && e > 1000.0 && e < 1000000.0 && isfinite(e)",
+                        "e_quantile": [0.05, 0.999]
+                    },
+                    "sep": {
+                        "qc": "qc_label == 0 && t50 > 45µs && t50 < 50µs && e > 1000.0 && e < 1000000.0 && isfinite(e)",
+                        "e_quantile": [0.05, 0.999]
+                    }
+                }
+            }
+        }
+    },
+    "pz": {
+        "default": {
+            "min_tau": {
+                "val" : 210.0,
+                "unit" : "µs"
+            },
+            "max_tau": {
+                "val": 550.0,
+                "unit": "µs"
+            },
+            "nbins": 75,
+            "rel_cut_fit": 0.05,
+            "peak": "all"
+        }
+    }
+}

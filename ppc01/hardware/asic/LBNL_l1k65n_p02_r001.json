@@ -3,6 +3,6 @@
         "val": 3000.0,
         "unit": "fF"
     },
-    "add_gain": 48.0,
+    "gain_tot": 600.0,
     "buffer": false
 }

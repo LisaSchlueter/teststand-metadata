@@ -7,6 +7,6 @@
         "val": 500.0,
         "unit": "fF"
     },
-    "add_gain": 1.0,
+    "gain_tot": 1.0,
     "buffer": true
 }

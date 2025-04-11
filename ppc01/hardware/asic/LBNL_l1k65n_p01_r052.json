@@ -1,0 +1,8 @@
+{
+    "cap_inj": {
+        "val": 5000.0,
+        "unit": "fF"
+    },
+    "gain_tot": 410.0,
+    "buffer": true
+}

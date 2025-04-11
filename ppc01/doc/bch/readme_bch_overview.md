@@ -24,7 +24,7 @@ All runs in this period are taken this the **ASIC L1k65n + buffer**. The Germani
 |               |                  |                 |            |                                                                           |
 
 ##  period 2 `p02`   
-This data was taken **before** period 1, in summer 2024 by Damien Bowen during his summer internship. Back then, the data strucutre didn't follow the period/run strucutre. It was integrated into the current structure at a later time. All runs in this period are taken this the **ASIC L1k65n without buffer**. For more detail, see `readme_bch_p02.md`
+This data was taken **before** period 1, in summer 2024 by Damien Bowen during his summer internship. Back then, the data strucutre didn't follow the period/run strucutre. It was integrated into the current structure at a later time. All runs in this period are taken this the **ASIC L1k65n without buffer**. For more detail, see `readme_bch_p02.md`. The **amp gain** is only the gain of the additionl amplifier not including the CSA. 
 |          |                 |                 |               |                 |             |                |                                    |
 | :------- | :-------------- | :-------------- | :------------ | :-------------- | :---------- | :------------- | :--------------------------------- |
 | **runs** | **# waveforms** | **temperature** | **amp. gain** | **C inj. (fF)** | **Cf (fF)** | **comment**    | **old name**                       |

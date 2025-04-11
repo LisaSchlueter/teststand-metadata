@@ -72,7 +72,7 @@ Used one of the optimal configuration of parameters.
 
 
 ## Run overview:
-
+### runs `r001 - r046`
 |          |                 |                                    |                                                                                      |
 | :------- | :-------------- | :--------------------------------- | :----------------------------------------------------------------------------------- |
 | **runs** | **# waveforms** | **pulser voltage (pp)**            | **comment**                                                                          |
@@ -113,7 +113,7 @@ Used one of the optimal configuration of parameters.
 | `r033`   | 100,000         | not connected to ASIC + terminated | noise run `90.3K`, both CSA outputs recorded with DAQ                                |
 | `r034`   | 10,000          | not connected to ASIC + terminated | "" + improved shielding                                                              |
 | `r035`   | 10,000          | not connected to ASIC + terminated | "" + improved shielding                                                              |
-| `r036`   | 5,000           | not connected to ASIC + terminated | noise run `90.0K`, use additional amplitfier with gain 11.9, CSA input was grounded! |
+| `r036`   | 5,000           | not connected to ASIC + terminated | noise run `90.0K`, use additional amplitfier with gain 11.9 (total gain 23.8), CSA input was grounded! |
 | `r037`   | 50,000          | not connected to ASIC + terminated | noise run `90.0K`, use additional amplitfier with gain 11.9, CSA input was grounded! |
 | `r038`   | 100             | not connected to ASIC + terminated | "", but with oscilloscope (extra long waveform), CSA input was grounded!             |
 | `r039`   | 5,00            | not connected to ASIC + terminated | noise run. `133 K`,  use additional amplitfier with gain 11.9, pulser connected      |
@@ -123,11 +123,21 @@ Used one of the optimal configuration of parameters.
 | `r043`   | 10,000          | not connected to ASIC + terminated | "                                                                                    |
 | `r044`   | 5,000           | not connected to ASIC + terminated | "   & change termination to `10k` termination                                        |
 | `r045`   | 5,000           | not connected to ASIC + terminated | "  & change termination to `50`                                                      |
-| `r046`   |                 | connected                          | "  & change termination to `50`   & pulser                                           |
-| `r047`   | 500             | not connected                      | Add. amplifier gain = `33.6`, `294.3 K`, ASIC power supply connected --> higher noise      |
-| `r048`   | 500             | not connected                      | " +  ASIC power supply via super-cap board                                           |
-| `r049`   | 10,000          | not connected                      | " + more  statistics                                                                 |
+| `r046`   | 365             | connected                          | "  & change termination to `50` & pulser, data taking interrupted                    |
 |          |                 |                                    |                                                                                      |
+
+### runs `r047`+:
+We moved the pulser capacitance inside the vacuum chamber, because it was picking up too much noise outside. The "amplifier system gain" was **measured** with the oscilloscope (injected voltage / output voltage). It is the voltage gain for the whole system (ASIC + second amplifier + differential output). These runs are noise runs.   
+|         |           |                 |                         |                      |                                      |
+| :------ | :-------- | :-------------- | :---------------------- | :------------------- | :----------------------------------- |
+| **run** | **T (K)** | **# waveforms** | **pulser voltage ,  C** | **amp. system gain** | **comment**                          |
+| `r047`  | 294.3     | 500             | `GND`,   `0.500 pF`     | `33.6`               | ASIC power supply directly connected |
+| `r048`  | 294.3     | 500             | `GND`,   `0.500 pF`     | `33.6`               | ASIC  power supply via board         |
+| `r049`  | 294.3     | 10,000          | `GND`,   `0.500 pF`     | `33.6`               | higher statistics                    |
+| `r050`  | 294.3     | 10,000          | `GND`,  `3 pF`          | `248.95`             | change pulser cap                    |
+| `r051`  | 294.3     | 10,000          | `GND`,  `3 pF`          | `248.95`             |                                      |
+| `r052`  | 295.0     | 10,000               | `GND`,  `5 pF`          | ` ~400 ?`                  | change pulser cap. & damaged CSA in the process  :(                    |
+|         |           |                 |                         |                      |                                      |
 
 
 ## Remarks and comments
@@ -137,5 +147,5 @@ We see a "wiggle" in the waveform (CSA output), which likely comes from reflecti
 ### Runs  `r033` - `r046`
 Various noise runs. Debugging noise sweep (looks mostly flat). Added an additional amplifier after ASIC. We realized two things: 1) Dynamic range of DAQ (2V at 14 bits) is too low to resolve our small noise. Additional amplifier needed! 2). For noise runs with "flat" noise sweep, the pulser capacitance was not properly grounded and/or the ASIC input was directly grounded and we only saw buffer noise. These runs were debugging runs...
 
-### Runs  `r047` +
-Move pulser capacitance inside vacuum chamber, as it was picking up too much noise outside.
+## Run `r052`
+We changed the injection capacitance of the pulser (at input of CSA) to `5pF`. The capacitance footprint was very small and the process difficult. Additionally, the ASIC power was still connected while soldering. This seemed to have damaged the CSA. We will have to use a new board for the next measurements. 

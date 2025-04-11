@@ -121,14 +121,21 @@ Used one of the optimal configuration of parameters.
 | `r041`   | 5,000           | not connected to ASIC + terminated | "                                                                                    |
 | `r042`   | 5,000           | not connected to ASIC + terminated | "                                                                                    |
 | `r043`   | 10,000          | not connected to ASIC + terminated | "                                                                                    |
- `r044`   | 5,000          | not connected to ASIC + terminated | "   & change termination to `10k`   termination                                                                                      |
-  `r045`   | 5,000          | not connected to ASIC + terminated | "  & change termination to `50`         |
+| `r044`   | 5,000           | not connected to ASIC + terminated | "   & change termination to `10k` termination                                        |
+| `r045`   | 5,000           | not connected to ASIC + terminated | "  & change termination to `50`                                                      |
+| `r046`   |                 | connected                          | "  & change termination to `50`   & pulser                                           |
+| `r047`   | 500             | not connected                      | Add. amplifier gain = `33.6`, `294.3 K`, ASIC power supply connected --> higher noise      |
+| `r048`   | 500             | not connected                      | " +  ASIC power supply via super-cap board                                           |
+| `r049`   | 10,000          | not connected                      | " + more  statistics                                                                 |
 |          |                 |                                    |                                                                                      |
 
 
 ## Remarks and comments
+### Runs  `r001` - `r032`
 We see a "wiggle" in the waveform (CSA output), which likely comes from reflections in the cables. For `r012` - `r022`, we added a termination on the CSA output channel that is *not* used. The resistance has tuned so that the wiggle became minimal. For `r023` - `r032`, new termination introduced to reduce relerection.
 
+### Runs  `r033` - `r046`
+Various noise runs. Debugging noise sweep (looks mostly flat). Added an additional amplifier after ASIC. We realized two things: 1) Dynamic range of DAQ (2V at 14 bits) is too low to resolve our small noise. Additional amplifier needed! 2). For noise runs with "flat" noise sweep, the pulser capacitance was not properly grounded and/or the ASIC input was directly grounded and we only saw buffer noise. These runs were debugging runs...
 
-
-
+### Runs  `r047` +
+Move pulser capacitance inside vacuum chamber, as it was picking up too much noise outside.

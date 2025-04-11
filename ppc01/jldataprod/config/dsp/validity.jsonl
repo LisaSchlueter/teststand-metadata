@@ -17,3 +17,4 @@
 {"valid_from":"20250404T211829Z", "category":"bch", "apply":["dsp_config_bch_default.json", "dsp_config_bch_p01_noise_80mus.json"]}
 {"valid_from":"20250404T173950Z", "category":"bch", "apply":["dsp_config_bch_default.json", "dsp_config_bch_p01_noise_4ms.json"]}
 {"valid_from":"20250409T020813Z", "category":"bch", "apply":["dsp_config_bch_default.json", "dsp_config_bch_p01_pulsernoise.json"]}
+{"valid_from":"20250410T223922Z", "category":"bch", "apply":["dsp_config_bch_default.json", "dsp_config_bch_p01_noise_80mus.json"]}

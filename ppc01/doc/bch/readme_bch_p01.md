@@ -128,16 +128,16 @@ Used one of the optimal configuration of parameters.
 
 ### runs `r047`+:
 We moved the pulser capacitance inside the vacuum chamber, because it was picking up too much noise outside. The "amplifier system gain" was **measured** with the oscilloscope (injected voltage / output voltage). It is the voltage gain for the whole system (ASIC + second amplifier + differential output). These runs are noise runs.   
-|         |           |                 |                         |                      |                                      |
-| :------ | :-------- | :-------------- | :---------------------- | :------------------- | :----------------------------------- |
-| **run** | **T (K)** | **# waveforms** | **pulser voltage ,  C** | **amp. system gain** | **comment**                          |
-| `r047`  | 294.3     | 500             | `GND`,   `0.500 pF`     | `33.6`               | ASIC power supply directly connected |
-| `r048`  | 294.3     | 500             | `GND`,   `0.500 pF`     | `33.6`               | ASIC  power supply via board         |
-| `r049`  | 294.3     | 10,000          | `GND`,   `0.500 pF`     | `33.6`               | higher statistics                    |
-| `r050`  | 294.3     | 10,000          | `GND`,  `3 pF`          | `248.95`             | change pulser cap                    |
-| `r051`  | 294.3     | 10,000          | `GND`,  `3 pF`          | `248.95`             |                                      |
-| `r052`  | 295.0     | 10,000               | `GND`,  `5 pF`          | ` ~400 ?`                  | change pulser cap. & damaged CSA in the process  :(                    |
-|         |           |                 |                         |                      |                                      |
+|         |           |                 |                         |                      |                                                     |
+| :------ | :-------- | :-------------- | :---------------------- | :------------------- | :-------------------------------------------------- |
+| **run** | **T (K)** | **# waveforms** | **pulser voltage ,  C** | **amp. system gain** | **comment**                                         |
+| `r047`  | 294.3     | 500             | `GND`,   `0.500 pF`     | `33.6`               | ASIC power supply directly connected                |
+| `r048`  | 294.3     | 500             | `GND`,   `0.500 pF`     | `33.6`               | ASIC  power supply via board                        |
+| `r049`  | 294.3     | 10,000          | `GND`,   `0.500 pF`     | `33.6`               | higher statistics                                   |
+| `r050`  | 294.3     | 10,000          | `GND`,  `3 pF`          | `248.95`             | change pulser cap                                   |
+| `r051`  | 294.3     | 10,000          | `GND`,  `3 pF`          | `248.95`             |                                                     |
+| `r052`  | 295.0     | 10,000          | `GND`,  `5 pF`          | ` ~400 ?`            | change pulser cap. & damaged CSA in the process  :( |
+|         |           |                 |                         |                      |                                                     |
 
 
 ## Remarks and comments

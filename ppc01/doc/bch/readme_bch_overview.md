@@ -12,16 +12,20 @@ The follow the following naming scheme: `readme_<category>_<period>_<runs>.md`.
 
 ## Overview table: period 1 `p01`   
 All runs in this period are taken this the **ASIC L1k65n + buffer**. The Germanium detector is not connected. For more detail, see `readme_bch_p01.md`
-|               |                  |                 |            |                                                                           |
-| :------------ | :--------------- | :-------------- | :--------- | :------------------------------------------------------------------------ |
-| **runs**      | **# waveforms**  | **temperature** | **cables** | **short description**                                                     |
-| `r001 - r010` | 5,000 (each)     | 295 K (room)    | 185 cm     | linearity data                                                            |
-| `r011`        | 100,000          | 295 K (room)    | 185 cm     | noise run                                                                 |
-| `r012`        | 100,000          | 90 K            | 185 cm     | noise run                                                                 |
-| `r013 - r022` | 5,000 (each)     | 90 K            | 185 cm     | linearity data                                                            |
-| `r023 - r032` | 5,000 (each)     | 90 K            | 185cm      | linearity data with improved termination                                  |
+|               |                  |                 |            |                                                                            |
+| :------------ | :--------------- | :-------------- | :--------- | :------------------------------------------------------------------------- |
+| **runs**      | **# waveforms**  | **temperature** | **cables** | **short description**                                                      |
+| `r001 - r010` | 5,000 (each)     | 295 K (room)    | 185 cm     | linearity data                                                             |
+| `r011`        | 100,000          | 295 K (room)    | 185 cm     | noise run                                                                  |
+| `r012`        | 100,000          | 90 K            | 185 cm     | noise run                                                                  |
+| `r013 - r022` | 5,000 (each)     | 90 K            | 185 cm     | linearity data                                                             |
+| `r023 - r032` | 5,000 (each)     | 90 K            | 185cm      | linearity data with improved termination                                   |
 | `r033 - r038` | 5,000 to 100,000 | 90.3 K          | 185cm      | noise runs      **pulser cap was not connected - CSA input was grounded!** |
-|               |                  |                 |            |                                                                           |
+| `r039 - r046` | 5,000 to 10,000  | 133 K           | 185cm      | noise runs + add. amplifier     **still some grounding issues!**           |
+| `r047 - r049` | 500 to 10,000    | 295 K           | 185cm      | noise runs + add. amplifier  + `Cinj = 0.5 pF` pulser cap. inside chamber  |
+| `r050 - r051` | 500 to 10,000    | 295 K           | 185cm      | noise runs + add. amplifier  + `Cinj = 3.0 pF`                             |
+| `r052`        | 500 to 10,000    | 295 K           | 185cm      | **ASIC destroyed** (noise runs + add. amplifier  + `Cinj = 5.0 pF`)        |
+|               |                  |                 |            |                                                                            |
 
 ##  period 2 `p02`   
 This data was taken **before** period 1, in summer 2024 by Damien Bowen during his summer internship. Back then, the data strucutre didn't follow the period/run strucutre. It was integrated into the current structure at a later time. All runs in this period are taken this the **ASIC L1k65n without buffer**. For more detail, see `readme_bch_p02.md`. The **amp gain** is only the gain of the additionl amplifier not including the CSA. 

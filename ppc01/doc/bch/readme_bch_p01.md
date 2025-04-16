@@ -136,7 +136,8 @@ We moved the pulser capacitance inside the vacuum chamber, because it was pickin
 | `r049`  | 294.3     | 10,000          | `GND`,   `0.500 pF`     | `33.6`               | higher statistics                                   |
 | `r050`  | 294.3     | 10,000          | `GND`,  `3 pF`          | `248.95`             | change pulser cap                                   |
 | `r051`  | 294.3     | 10,000          | `GND`,  `3 pF`          | `248.95`             |                                                     |
-| `r052`  | 295.0     | 10,000          | `GND`,  `5 pF`          | ` ~400 ?`            | change pulser cap. & damaged CSA in the process  :( |
+| `r052`  | 295.0     | 10,000          | `GND`,  `5 pF`          | not measured         | change pulser cap. & damaged CSA in the process  :( |
+| `r053`  | 295.0     |                 | `GND`,  `5 pF`          | ` 365.27`            | new ASIC boad                                       |
 |         |           |                 |                         |                      |                                                     |
 
 

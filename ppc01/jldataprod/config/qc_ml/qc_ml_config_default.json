@@ -1,0 +1,17 @@
+{"qc_labels":{
+    "0": "normal",
+    "1": "neg. going",
+    "2": "up slope",
+    "3": "down slope",
+    "4": "spike",
+    "5": "x-talk",
+    "6": "slope rising",
+    "7": "early trigger",
+    "8": "late trigger",
+    "9": "saturated",
+    "10": "soft pileup",
+    "11": "hard pileup",
+    "12": "bump",
+    "13": "noise"
+    }
+}

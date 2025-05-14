@@ -43,6 +43,36 @@
             "unit": "µs"
         },        
         "t0_threshold": 0.01, 
+        "e_grid_trap" : {
+            "rt": {
+                "start": {
+                    "val": 0.5,
+                    "unit": "µs"
+                },
+                "stop": {
+                    "val": 18.0,
+                    "unit": "µs"
+                },
+                "step": {
+                    "val": 0.5,
+                    "unit": "µs"
+                }
+            },
+            "ft": {
+                "start": {
+                    "val": 1.0,
+                    "unit": "µs"
+                },
+                "stop": {
+                    "val": 4.0,
+                    "unit": "µs"
+                },
+                "step": {
+                    "val": 0.1,
+                    "unit": "µs"
+                }
+            }
+        },
         "flt_defaults": {
             "sg":
                 {
